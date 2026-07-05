@@ -37,3 +37,9 @@ hermes-agent/
 
 # Local backup internals
 .backup-work/
+
+# Cron runtime heartbeat files
+cron/ticker_heartbeat
+cron/ticker_last_success
+cron/*.lock
+cron/output/
