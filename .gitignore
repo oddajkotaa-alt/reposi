@@ -1,0 +1,39 @@
+# Secrets and environment files
+.env
+*.env
+*secret*
+*token*
+*credential*
+auth.json
+.auth*
+pairing/
+platforms/
+
+# Runtime state and databases
+logs/
+cache/
+audio_cache/
+image_cache/
+images/
+lazy-packages/
+state.db*
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.lock
+*.pid
+gateway_state.json
+channel_directory.json
+
+# Chat/session history excluded by default
+sessions/
+
+# Dependency/build/cache noise
+node_modules/
+__pycache__/
+*.pyc
+hermes-agent/
+
+# Local backup internals
+.backup-work/
