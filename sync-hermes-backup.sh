@@ -13,6 +13,11 @@ if ! docker inspect "$CONTAINER" >/dev/null 2>&1; then
   exit 1
 fi
 
+if [ "$(docker inspect -f '{{.State.Running}}' "$CONTAINER")" != "true" ]; then
+  echo "ERROR: Docker container '$CONTAINER' is not running; refusing to modify backup" >&2
+  exit 1
+fi
+
 rm -rf "$STAGING_DIR"
 mkdir -p "$STAGING_DIR"
 
