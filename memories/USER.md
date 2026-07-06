@@ -1,19 +1,21 @@
 User prefers direct answers, with enough explanation for a beginner because they are new and expect to ask many questions.
 §
-User works on TikTok Shop slideshow content and created Hermes to help with that workflow.
+User created Hermes to automate end-to-end TikTok Shop slideshow workflow, especially prompt generation and Google Flow image generation.
 §
 User prefers to be asked before big changes or deleting files.
 §
 User does not want private data saved, including passwords, API keys, tokens, IP addresses, or payment details.
 §
-User creates TikTok Shop slideshow ad images across categories (currently pet; also skincare/beauty) and wants reusable prompt systems optimized for sales.
+User creates TikTok Shop slideshows across categories; wants reusable sales-optimized prompt systems.
 §
-User's TikTok Shop image prompts default to 3:4 with a strong first-slide hook unless they request otherwise.
+Default TikTok Shop prompt format: 3:4, strong first-slide hook.
 §
-User provides product/reference photos; generated images must preserve exact product/reference appearance and avoid exaggerating product size or adding unprovided claims.
+User provides reference photos; generated images must preserve exact appearance, avoid exaggerating product size, and avoid unprovided claims.
 §
-User likes viral TikTok, realistic lifestyle, UGC/influencer, minimal white-background, before/after, and problem/solution styles.
+Preferred image styles: viral TikTok, realistic lifestyle, UGC/influencer, minimal white, before/after, problem/solution.
 §
-User wants Google Flow Agent generation workflow: Nano Banana Pro, 3:4, upload only two refs (product + cat/person), send all slide prompts together.
+Preferred Google Flow workflow: Agent generation, Nano Banana Pro, 3:4, upload only two refs (product + cat/person), paste all prompts in one block.
 §
-User currently runs Hermes on a VPS, so browser automation must use a VPS browser/noVNC setup or a local Hermes instance on their PC; VPS Hermes cannot directly control their PC browser.
+User runs Hermes on a VPS; browser automation needs VPS browser/noVNC or local PC Hermes, and they want VPS workflows that can continue if their PC is off.
+§
+When checking user-sent Telegram images, search .jpg/.jpeg/.png/.webp/.heic sorted newest; Telegram may save photos as .jpg.

@@ -52,3 +52,30 @@ Use this when the user wants to generate TikTok Shop carousel images in Google F
 ## File intake pitfall
 
 When checking whether Telegram-uploaded images arrived, search common image extensions and sort by modification time. Do not only search `.jpeg`; Telegram or gateways may save photos as `.jpg`, `.png`, `.webp`, or `.heic`.
+
+## VPS noVNC setup pitfalls
+
+When the user chooses VPS-hosted browser automation for Google Flow, prefer a browser container the user can log into manually through an SSH tunnel. Give one-line Docker commands when the user is copy/pasting into a shell; multi-line commands with backslashes often fail if whitespace is added after `\` or if a line is missed.
+
+Key notes:
+
+- The safer tunnel pattern is binding the container web UI to localhost on the VPS, then forwarding it from the user's PC with SSH.
+- Kasm Chrome commonly serves the noVNC web UI over **HTTPS on port 6901**, not `6080`. Test with `curl -k -I https://127.0.0.1:6901`.
+- LinuxServer Firefox uses a simpler web UI for many users; its internal web ports are commonly `3000`/`3001`, so map `127.0.0.1:6080:3000` for browser access.
+- If `docker ps --filter name=...` only prints the table header, the container is not running. Ask for the exact `docker run` error, or check `docker ps -a` and `docker logs` if the container was created.
+- If a tool shell inside Hermes says it cannot connect to `/var/run/docker.sock`, do not assume the user's SSH shell has the same limitation. Explain that the Hermes runtime may be containerized/restricted and ask the user to run the Docker command directly on the VPS host.
+- Never request Google passwords, 2FA codes, cookies, or account secrets. The user logs in through noVNC; Hermes only automates after the authenticated browser is ready.
+
+Example one-line LinuxServer Firefox command:
+
+```bash
+docker rm -f hermes-browser 2>/dev/null || true; docker run -d --name hermes-browser -p 127.0.0.1:6080:3000 -p 127.0.0.1:6081:3001 -v /opt/data/tiktok-products:/config/tiktok-products lscr.io/linuxserver/firefox:latest; docker ps --filter name=hermes-browser
+```
+
+User-side tunnel:
+
+```bash
+ssh -L 6080:127.0.0.1:6080 USER@VPS_IP
+```
+
+Then open `http://127.0.0.1:6080` on the user's PC.
