@@ -6,12 +6,12 @@ User prefers to be asked before big changes or deleting files.
 §
 User does not want private data saved, including passwords, API keys, tokens, IP addresses, or payment details.
 §
-User creates TikTok Shop product slideshow images across product categories; current focus is pet products but wants prompts adaptable to skincare/beauty and other products.
+User creates TikTok Shop slideshow ad images across categories (currently pet; also skincare/beauty) and wants reusable prompt systems optimized for sales.
 §
-User prefers TikTok Shop slideshow image prompts to default to 3:4 aspect ratio unless they request otherwise, with an eye-catching first slide/hook image.
+User's TikTok Shop image prompts default to 3:4 with a strong first-slide hook unless they request otherwise.
 §
-User usually has product photos and attaches them as references; generated images should preserve the exact same product appearance.
+User provides product/reference photos; generated images must preserve exact product/reference appearance and avoid exaggerating product size or adding unprovided claims.
 §
-User wants prompt sets and reusable systems optimized primarily for sales, using viral TikTok, realistic lifestyle, UGC/influencer, minimal white-background, before/after, and problem/solution styles.
+User likes viral TikTok, realistic lifestyle, UGC/influencer, minimal white-background, before/after, and problem/solution styles.
 §
-User often uses Hermes to review TikTok Shop slideshow ad images, including extracting visible text, layout, product benefits, and overall ad sequence purpose.
+User wants Google Flow Agent generation workflow: Nano Banana Pro, 3:4, upload only two refs (product + cat/person), send all slide prompts together.

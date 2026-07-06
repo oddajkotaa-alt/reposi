@@ -70,3 +70,4 @@ For this user's TikTok Shop slideshow image prompts, also consult `references/ti
 ## Useful support files
 
 - `references/google-flow-batch-workflow.md` — practical outline for batching prompts into Google Flow while saving GPT usage.
+- `references/tiktok-shop-json-carousel-system.md` — preferred JSON/one-block carousel prompt system for this user's TikTok Shop slideshow images, including 3:4 locking, reference-image accuracy, claim-safety, slide arcs, Google Flow Agent usage, and image-cache debugging.

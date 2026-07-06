@@ -129,19 +129,40 @@ Typography:
 - Labels/callouts: small italic serif charcoal or Yale Blue, no boxes/pills.
 - Arrows: thin hand-drawn Yale Blue. Avoid red arrows.
 
-## Mobile readability rules
+## Mobile readability and truth-in-advertising rules
 
 - Text must be readable on a phone screen.
 - Prefer no more than: 1 headline + 1 accent + 1 short body line.
 - Spec/product reveal slides should use 3 short callouts unless the user explicitly asks for a dense spec slide.
-- Keep product large enough to recognize in one second; often 45–60% of frame height.
+- Keep product recognizable quickly, but **do not exaggerate product size, thickness, padding, scale, or premium-ness**. If the product reference looks small/thin/simple, preserve that. Avoid instructions like “fill 60% of the frame” when they could misrepresent the item.
+- Product claims must stay limited to facts the user already provided. Do not add compliance-sensitive claims such as “vet approved,” “non-toxic,” “waterproof,” “anti-scratch,” exact temperature drops, medical/therapeutic benefits, or guaranteed results unless the user explicitly provides proof and asks to use them.
 - Avoid crowding text into top/bottom safe areas.
 - Leave clean negative space behind text.
+
+## Slide-structure corrections from user feedback
+
+- Do not create a “show all tips at once” slide if the carousel is structured as one tip per slide. Use separate slides for separate tips.
+- Hook copy must make plain sense to a shopper. Avoid vague or clever lines that sound visually interesting but logically weak (e.g. a hook that does not clearly connect to the product/problem).
+- For pet cooling-mat style carousels, a safer 7-slide arc is: hook/problem → tip 1 → tip 2 → tip 3/product solution → product reveal → proof/close-up → CTA.
+- When revising prompts, preserve the same product information and improve only visual clarity, hook strength, flow, and readability unless the user asks for new claims.
+
+## Google Flow Agent workflow for this user
+
+- The user often uses Google Flow **Agent generation**, not normal single-prompt generation, because they paste all slide prompts in one block and let the agent generate the carousel.
+- Preferred automation target sequence: New project → Agent generation → Agent → model “Nano Banana Pro” → aspect ratio 3:4 → upload exactly two references (cat + product) → paste one full prompt block.
+- Structure one-block prompts as: task, reference image mapping, global rules, claim-safety rules, then Slide 1…Slide N. Include “generate each slide as a separate 3:4 portrait image; do not combine into one collage.”
+- Be clear that browser automation can assist normal authorized use, but do not help bypass CAPTCHA/login/payment/access controls or stealth/bot-detection systems.
+
+## Image-receipt/debugging pattern
+
+- When the user says they sent images via Telegram, check all common cached image extensions (`.jpg`, `.jpeg`, `.png`, `.webp`, `.heic`) and sort by modified time. Do not only search `.jpeg`; Telegram may save new photos as `.jpg`.
+- If images are found, identify them visually and copy them into a stable product folder such as `tiktok-products/<product>/references/cat_reference.jpg` and `product_reference.jpg` before building prompts/automation.
 
 ## Common pitfalls to avoid
 
 - Generator returns landscape even though prompt says 3:4: repeat 3:4 in `aspect_ratio`, `format_lock`, and scene description; also remind user to select 3:4 in the generator UI if available.
 - Text-heavy product reveal slides feel like catalogs: shorten to punchy sales copy and 3 key benefits.
-- Product too low/small: explicitly specify size and centrality.
+- Product too low/small: specify natural visibility, but not unrealistic scale.
+- Product too large/too premium-looking: explicitly preserve real product proportions, thickness, material, and scale from the reference.
 - UGC slides look too polished: add instruction that it should feel like a candid home TikTok creator photo with editorial overlay.
 - Product mismatch: keep the reference-critical block high in the prompt and in `quality.include`/`quality.avoid`.
