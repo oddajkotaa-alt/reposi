@@ -15,3 +15,5 @@ User provides product/reference photos; generated images must preserve exact pro
 User likes viral TikTok, realistic lifestyle, UGC/influencer, minimal white-background, before/after, and problem/solution styles.
 §
 User wants Google Flow Agent generation workflow: Nano Banana Pro, 3:4, upload only two refs (product + cat/person), send all slide prompts together.
+§
+User currently runs Hermes on a VPS, so browser automation must use a VPS browser/noVNC setup or a local Hermes instance on their PC; VPS Hermes cannot directly control their PC browser.

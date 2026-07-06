@@ -25,7 +25,7 @@ This is especially important when the user is worried about GPT limits or cost.
 
 ## Recommended workflow
 
-For this user's TikTok Shop slideshow image prompts, also consult `references/tiktok-shop-json-carousel-system.md` for the preferred JSON carousel structure, 3:4 format lock, reference-product accuracy block, pet/beauty arcs, and mobile readability rules.
+For this user's TikTok Shop slideshow image prompts, consult `references/tiktok-shop-json-carousel-system.md` for the preferred JSON carousel structure and `references/google-flow-agent-carousel-workflow.md` for the one-block Google Flow Agent workflow.
 
 1. **Collect product inputs**
    - Product name
@@ -34,8 +34,14 @@ For this user's TikTok Shop slideshow image prompts, also consult `references/ti
    - Visual style
    - Required format, usually vertical 3:4 for this user's slideshow images unless they ask otherwise
    - Number of variations needed
+   - Exact product claims allowed; do not invent new product facts for marketplace compliance
 
-2. **Generate prompt batch once**
+2. **Collect reference assets when generating product images**
+   - Product reference photo(s) are the source of truth for color, shape, label, material, pattern, thickness, and scale.
+   - Pet/person/character references are the source of truth for markings, appearance, and continuity across slides.
+   - When checking whether Telegram-uploaded images arrived, search `.jpg`, `.jpeg`, `.png`, `.webp`, and `.heic` sorted by modification time; gateways may not use the extension you expect.
+
+3. **Generate prompt batch once**
    - Ask the model for a numbered list or CSV-ready list.
    - Keep outputs clean: no explanation, no markdown table unless requested.
    - Include constraints like: no text, no captions, no logos, product-focused, realistic lighting.
@@ -63,11 +69,13 @@ For this user's TikTok Shop slideshow image prompts, also consult `references/ti
 
 ## Safety and account boundaries
 
-- Do not type passwords, 2FA codes, API keys, payment details, or other private secrets.
-- If Google Flow or any browser tool shows login, CAPTCHA, payment, or permission prompts, stop and ask the user to handle it.
+- Do not type passwords, 2FA codes, API keys, payment details, cookies, or other private secrets.
+- If Google Flow or any browser tool shows login, CAPTCHA, payment, permission, or account-security prompts, stop and ask the user to handle it.
+- Browser/computer-use automation can only control the browser environment Hermes can access. If Hermes runs on a VPS and Google Flow is open on the user's PC, direct automation cannot reach that PC browser; use local Hermes on the PC, or run a VPS browser/noVNC session that the user logs into manually.
 - Warn that website UI automation can break if the layout changes.
 
 ## Useful support files
 
 - `references/google-flow-batch-workflow.md` — practical outline for batching prompts into Google Flow while saving GPT usage.
 - `references/tiktok-shop-json-carousel-system.md` — preferred JSON/one-block carousel prompt system for this user's TikTok Shop slideshow images, including 3:4 locking, reference-image accuracy, claim-safety, slide arcs, Google Flow Agent usage, and image-cache debugging.
+- `references/google-flow-agent-carousel-workflow.md` — concise Google Flow Agent workflow for uploading two references once, pasting one full carousel prompt block, preserving product-claim safety, and choosing a workable browser automation setup.
