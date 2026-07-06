@@ -25,12 +25,14 @@ This is especially important when the user is worried about GPT limits or cost.
 
 ## Recommended workflow
 
+For this user's TikTok Shop slideshow image prompts, also consult `references/tiktok-shop-json-carousel-system.md` for the preferred JSON carousel structure, 3:4 format lock, reference-product accuracy block, pet/beauty arcs, and mobile readability rules.
+
 1. **Collect product inputs**
    - Product name
    - Main benefit/problem solved
    - Audience
    - Visual style
-   - Required format, usually vertical 9:16
+   - Required format, usually vertical 3:4 for this user's slideshow images unless they ask otherwise
    - Number of variations needed
 
 2. **Generate prompt batch once**

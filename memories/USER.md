@@ -13,3 +13,5 @@ User prefers TikTok Shop slideshow image prompts to default to 3:4 aspect ratio 
 User usually has product photos and attaches them as references; generated images should preserve the exact same product appearance.
 §
 User wants prompt sets and reusable systems optimized primarily for sales, using viral TikTok, realistic lifestyle, UGC/influencer, minimal white-background, before/after, and problem/solution styles.
+§
+User often uses Hermes to review TikTok Shop slideshow ad images, including extracting visible text, layout, product benefits, and overall ad sequence purpose.
