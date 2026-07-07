@@ -144,7 +144,22 @@ Typography:
 - Do not create a “show all tips at once” slide if the carousel is structured as one tip per slide. Use separate slides for separate tips.
 - Hook copy must make plain sense to a shopper. Avoid vague or clever lines that sound visually interesting but logically weak (e.g. a hook that does not clearly connect to the product/problem).
 - For pet cooling-mat style carousels, a safer 7-slide arc is: hook/problem → tip 1 → tip 2 → tip 3/product solution → product reveal → proof/close-up → CTA.
-- When revising prompts, preserve the same product information and improve only visual clarity, hook strength, flow, and readability unless the user asks for new claims.
+- For short 3-slide pet cooling-mat regenerations, use: **Slide 1 = heat/problem hook with no cooling mat visible**; Slide 2 = product introduced; Slide 3 = proof/comfort/CTA. The user explicitly prefers not to show the cooling mat on the first slide.
+- For pet heat/problem hooks, make the problem visually obvious, not merely a normal cute pet pose. Use strong but safe cues such as sprawled flat posture, head low to the floor, droopy/half-closed eyes, relaxed ears, visible tongue out/light panting, warm sunlight, water bowl nearby, and heat-color grading. Avoid making the animal look injured, dead, horror-like, or medically distressed.
+- Vary backgrounds between slides so the carousel does not feel repetitive: e.g. outdoor patio/garden for problem hook, living room for product discovery, bedroom/hallway/window area for comfort proof. Make scene variety explicit in each JSON prompt.
+- When the user supplies exact overlay copy, reproduce it exactly and quality-check spelling/casing before finalizing.
+- When revising prompts, preserve the same product information and improve only visual clarity, hook strength, flow, background variety, and readability unless the user asks for new claims.
+
+## Direct ChatGPT Image 2 generation workflow
+
+Use this when the user asks Hermes to generate the images directly instead of only preparing Google Flow prompts:
+
+1. Analyze all reference images first: source slideshow style examples, pet/person reference, and product reference.
+2. Build a separate compact JSON prompt for each slide, including `task`, `style_settings`, `composition`, `reference` blocks, `text_overlay`, and `negative_prompt`.
+3. Generate slides **one by one** with `image_generate`, passing the relevant style image as `image_url` and cat/product references as additional references when needed.
+4. If the user asks to avoid rate/limit issues, wait roughly 60–90 seconds between generations rather than firing all image generations at once.
+5. For this user's preferred slideshow format, do not trust the prompt alone for 3:4. After each direct image generation, verify actual pixel dimensions; accept only ratios where `width * 4 == height * 3`. If a slide comes back 9:16/tall, regenerate with explicit wording like `TRUE 3:4 portrait`, `not 9:16`, and `product-card/slideshow frame`.
+6. After generation, run a visual quality check: correct animal/product, product absent/present as intended, varied background, readable overlay text, exact requested copy, and no obvious misspellings or watermarks.
 
 ## Google Flow Agent workflow for this user
 
