@@ -99,9 +99,12 @@ Use the same slideshow discipline for book bundles and other non-pet products:
 
 - Extract each title/cover from the user's reference photo and preserve recognizability; book titles may not be perfect, but covers should be close and not warped.
 - Avoid fake phone screenshot borders when regenerating; output clean 3:4 images.
-- If source images look bad, improve realism by changing backgrounds while keeping the same tips/copy.
+- If source images look bad, keep the same tips/copy but rebuild the visuals with better backgrounds and lighting.
+- For this user, **realistic** means *casual iPhone-quality photo*, not glossy AI/editorial: natural window light, realistic shadows, normal desks/tables/bedside scenes, slight imperfections, simple props, no plastic lighting.
+- Avoid generated people/faces/hands unless the user explicitly requires them; object/product scenes with books, coffee, journals, pens, and real rooms usually look more believable.
+- If the user provides an aspirational collage reference, use it only for direction; create a new version instead of copying the same scenes/layout directly.
 - Vary backgrounds by theme: morning desk, finance desk, calm bedside, cafe/reading nook, self-care desk, final bundle flat-lay.
-- Keep the user's visual style: black serif headline + yellow brush highlight. Do not switch to unrelated collage/fantasy imagery.
+- Keep the user's visual style: black serif headline + yellow brush highlight. Do not switch to unrelated premium editorial, collage/fantasy, or polished Pinterest imagery unless explicitly asked.
 - For final bundle slides, show all products at consistent physical size and include `Shop Here ↓` bottom-left if a CTA is needed.
 
 ## Verification checklist
@@ -119,3 +122,4 @@ Before delivering:
 
 See `references/pet-cooling-mat-session.md` for concrete examples from the cat cooling mat workflows.
 See `references/user-style-and-consistency-notes.md` for the user's `my style` visual system, consistency pitfalls, product-info wording, and book-bundle workflow notes.
+See `references/book-bundle-iphone-realism.md` for the latest book-bundle prompt pattern: casual iPhone realism, natural light, no polished AI/editorial look.
