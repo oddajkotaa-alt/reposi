@@ -100,9 +100,10 @@ Use the same slideshow discipline for book bundles and other non-pet products:
 - Extract each title/cover from the user's reference photo and preserve recognizability; book titles may not be perfect, but covers should be close and not warped.
 - Avoid fake phone screenshot borders when regenerating; output clean 3:4 images.
 - If source images look bad, keep the same tips/copy but rebuild the visuals with better backgrounds and lighting.
-- For this user, **realistic** means *casual iPhone-quality photo*, not glossy AI/editorial: natural window light, realistic shadows, normal desks/tables/bedside scenes, slight imperfections, simple props, no plastic lighting.
-- Avoid generated people/faces/hands unless the user explicitly requires them; object/product scenes with books, coffee, journals, pens, and real rooms usually look more believable.
+- For this user, **realistic** means *ordinary iPhone-quality photo*, not glossy AI/editorial: natural window light, normal exposure, realistic shadows, slight imperfections, simple props, no plastic lighting. If they say **iPhone 17 style**, keep sharp modern-phone detail and good natural light but still avoid cinematic/color-graded/editorial polish.
+- Avoid generated people/faces/hands unless the user explicitly requires them; object/product scenes with books, coffee, journals, pens, and real rooms usually look more believable. For lifestyle hook collages, prefer no-face/cropped details to avoid AI-looking people.
 - If the user provides an aspirational collage reference, use it only for direction; create a new version instead of copying the same scenes/layout directly.
+- For book-bundle slideshows, the user prefers **no books/products on the first hook slide**. Use an original 2×2 cut/collage of ordinary self-improvement lifestyle scenes, then introduce books on later slides.
 - Vary backgrounds by theme: morning desk, finance desk, calm bedside, cafe/reading nook, self-care desk, final bundle flat-lay.
 - Keep the user's visual style: black serif headline + yellow brush highlight. Do not switch to unrelated premium editorial, collage/fantasy, or polished Pinterest imagery unless explicitly asked.
 - For final bundle slides, show all products at consistent physical size and include `Shop Here ↓` bottom-left if a CTA is needed.

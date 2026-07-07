@@ -4,7 +4,7 @@ User uses Hermes for TikTok Shop slideshow and commentary-video workflows: promp
 §
 TikTok Shop defaults: 3:4, strong first-slide hook with no product unless requested; problem→solution→proof flow; introduce product/books after the hook.
 §
-Image refs must preserve exact appearance/scale/anatomy, avoid oversized products/unprovided claims, vary backgrounds. “My style” means match example fonts/colors/yellow highlights and use natural iPhone-like realism, not polished AI/editorial visuals.
+Image refs must preserve exact appearance/scale/anatomy, avoid oversized products/unprovided claims, vary backgrounds. “My style” means match example fonts/colors/yellow highlights and use natural iPhone-like realism, not polished AI/editorial visuals. Make CTA “Shop Here” a bit bigger.
 §
 Preferred Google Flow workflow: Agent generation, Nano Banana Pro, 3:4, upload only two refs (product + cat/person), paste all prompts in one block.
 §

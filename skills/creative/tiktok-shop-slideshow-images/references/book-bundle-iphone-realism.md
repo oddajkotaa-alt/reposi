@@ -8,7 +8,8 @@ The user was not asking for a different story structure; they objected to the **
 
 - Avoid polished AI/editorial/Pinterest renders.
 - Aim for **casual iPhone-quality photo realism**: natural window light, real shadows, slight imperfections, normal table/desk/bedside settings, simple props.
-- Avoid generated people when possible; faces/hands and multi-panel lifestyle collages made the result look obviously AI.
+- When the user says **iPhone 17 style**, interpret it as sharp modern phone detail + good natural lighting, but still **non-cinematic**: no film look, no moody dramatic light, no glossy editorial color grading, no perfect model-shoot polish.
+- Avoid generated people when possible; faces/hands and multi-panel lifestyle collages can make the result look obviously AI. If the hook needs people, crop faces out and use everyday no-face details (shoes, hands writing, counter objects, from-behind walking).
 - If people/collage are requested, use the reference as inspiration only — do not copy the same scenes directly.
 - Better fallback for realism: object/product photos (books, coffee, journal, desk, bedside table) instead of AI people.
 
@@ -16,15 +17,23 @@ The user was not asking for a different story structure; they objected to the **
 
 Use direct language such as:
 
-> realistic iPhone photo style, not polished AI. Casual photo taken by a person in natural window light, slight imperfections, realistic shadows, normal room/table, no glossy editorial lighting, no AI collage, no fake people.
+> ordinary iPhone 17 casual photo realism, not cinematic, not glossy, not editorial. Natural daylight, normal exposure, minimal color grading, realistic shadows, slightly imperfect camera-roll framing. Looks like a quick photo taken by a person at home, not a studio product ad.
+
+For hook collages:
+
+> 2x2 cut/collage, no books/products on slide 1, no clear faces, cropped everyday scenes, ordinary camera-roll photos.
 
 Add negatives:
 
-> polished studio render, AI collage, fake people, glossy Pinterest aesthetic, plastic lighting, warped objects, distorted book cover, unreadable title, phone UI borders.
+> cinematic lighting, moody film look, glossy editorial, perfect photoshoot, polished studio render, AI collage, fake people, plastic lighting, deformed hands/faces, warped objects, distorted book cover, unreadable title, phone UI borders.
 
 ## Book slide structure used
 
-- Slide 1: all five books on a real table; headline `how to be a 10/10 woman`; highlight `5 books I’d read first`.
+For this user's book-bundle posts, treat the first slide like the normal TikTok Shop problem/hook rule: **do not show the product/books on slide 1** unless they explicitly ask. Use a relatable aspiration hook first, then show the books in later slides.
+
+- Slide 1 hook: no books/products. Use an original 2×2 cut/collage of ordinary lifestyle self-improvement photos. Text: main `HOW TO BECOME`, script `a 10/10 woman`, highlight `5 books I’d read first`.
+  - Visuals that worked: cropped/no-face everyday scenes such as gym shoes + water bottle, hands writing goals in a planner, skincare/morning counter, cropped from-behind cafe/city walk.
+  - Do **not** copy a supplied 2×2 reference directly. Use it only for the idea and make new scenes.
 - Slide 2: Atomic Habits — `1) get 1% better everyday`; highlight `tiny changes, real results`.
 - Slide 3: The Psychology of Money — `2) get rich before looking rich`; highlight `wealth is built quietly`.
 - Slide 4: Don’t Believe Everything You Think — `3) learn to escape overthinking`; highlight `not every thought deserves belief`.
