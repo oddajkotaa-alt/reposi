@@ -41,6 +41,20 @@ For this user's book-bundle posts, treat the first slide like the normal TikTok 
 - Slide 6: The Let Them Theory — `5) focus on what you can control`; highlight `let them. protect your peace.`
 - Slide 7: final bundle CTA — `get all five for the price of one`; highlight `linked down below`; CTA `Shop Here ↓`.
 
+## Alternate concept pattern that the user liked
+
+When the user asks for a **new style by yourself but as visualisations use my style**, create a new story/copy angle while preserving the visual system and realism constraints. Example concept used:
+
+- Slide 1 hook: `SOFT LIFE STARTS`; script `with what you read`; highlight `5 books I’d start with`. No books/products; 2×2 everyday collage.
+- Slide 2 Atomic Habits: `start with your habits`; highlight `small routines change everything`.
+- Slide 3 Psychology of Money: `then fix your money mindset`; highlight `quiet wealth beats looking rich`.
+- Slide 4 Don’t Believe Everything You Think: `stop believing every thought`; highlight `peace starts in your head`.
+- Slide 5 The Courage To Be Disliked: `choose your life on purpose`; highlight `stop living for approval`.
+- Slide 6 The Let Them Theory: `let people show you who they are`; highlight `then protect your peace`.
+- Slide 7 CTA: `build the version of you`; highlight `that future you thanks you for`; CTA `Shop Here ↓`.
+
+This pattern means: change copy/concept/scene choices, not the user's typography/ratio/realism standards.
+
 ## Style constraint
 
 Keep the user’s visual system for text:
@@ -50,5 +64,6 @@ Keep the user’s visual system for text:
 - 3:4 portrait
 - no phone screenshot UI
 - clean readable overlay
+- final CTA `Shop Here ↓` bottom-left, **larger than earlier body text** so it is obvious while scrolling
 
 Do not confuse “use my style” with changing the whole scene into a premium editorial design.

@@ -106,7 +106,8 @@ Use the same slideshow discipline for book bundles and other non-pet products:
 - For book-bundle slideshows, the user prefers **no books/products on the first hook slide**. Use an original 2×2 cut/collage of ordinary self-improvement lifestyle scenes, then introduce books on later slides.
 - Vary backgrounds by theme: morning desk, finance desk, calm bedside, cafe/reading nook, self-care desk, final bundle flat-lay.
 - Keep the user's visual style: black serif headline + yellow brush highlight. Do not switch to unrelated premium editorial, collage/fantasy, or polished Pinterest imagery unless explicitly asked.
-- For final bundle slides, show all products at consistent physical size and include `Shop Here ↓` bottom-left if a CTA is needed.
+- For final bundle slides, show all products at consistent physical size and include `Shop Here ↓` bottom-left if a CTA is needed; make `Shop Here ↓` noticeably larger than normal body/callout text.
+- If the user asks for a **new style/concept by yourself** but also says **use my style/visualisations**, invent new copy/story scenes while preserving their visual system: natural iPhone-like realism, black serif typography, yellow brush highlight, 3:4, and non-cinematic lighting.
 
 ## Verification checklist
 
