@@ -4,7 +4,7 @@ User uses Hermes for TikTok Shop slideshow automation: prompt generation, Google
 §
 TikTok Shop defaults: 3:4, strong first-slide hook; problem→solution→proof flow; often avoid showing product on slide 1.
 §
-Image refs must preserve exact product/cat appearance, avoid oversized products and unprovided claims, vary backgrounds, and avoid repeating product info across slides.
+Image refs must preserve exact product/cat appearance, avoid oversized products and unprovided claims, vary backgrounds, avoid repeating product info across slides, and when user says "my style" match the provided examples' font colors/stylization.
 §
 Preferred Google Flow workflow: Agent generation, Nano Banana Pro, 3:4, upload only two refs (product + cat/person), paste all prompts in one block.
 §
