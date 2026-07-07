@@ -39,8 +39,9 @@ Use this skill when the user wants TikTok Shop slideshow images, product-ad prom
 
 - The user prefers realistic TikTok Shop/UGC product photos over cartoon or overly polished editorial images unless asked otherwise.
 - When the user says **"my style"**, match the provided example slides' **visual styling**, not just the concept: big bold black serif-style headlines, black text, yellow brush-stroke highlights, simple pale/white backgrounds, clean TikTok Shop layout, and minimal labels. Avoid switching to premium editorial cards, blue pill labels, or a completely different design language unless the user explicitly asks for a new style.
+- If the user asks for a **new style** *and* says **use my style**, change the concept/backgrounds/composition while preserving the signature typography and yellow brush highlight system.
 - Use **3:4 portrait** for slideshow images and verify dimensions when possible.
-- Keep backgrounds varied between slides so the slideshow does not feel repetitive.
+- Keep backgrounds varied between slides so the slideshow does not feel repetitive, but keep the product/subject scale consistent.
 - For pet cooling products, the first slide should show the problem clearly (e.g. overheated/exhausted cat) and should not include the cooling mat.
 - Make the problem visually obvious when requested: change the animal posture/expression, not only the text. Example: sprawled flat, tired eyes, tongue out/panting, warm sunlight, water bowl nearby.
 - The user may write rough English; improve the text into natural ad copy that makes sense, but keep the intended meaning.
@@ -49,6 +50,15 @@ Use this skill when the user wants TikTok Shop slideshow images, product-ad prom
 - Avoid white product-info squares/cards on final proof/CTA slides if the user says they dislike them.
 
 ## Prompting patterns
+
+### Consistency rule for multi-slide sets
+
+Add an explicit global consistency block to every prompt when the same subject/product appears across slides:
+
+- Keep the same subject identity, adult/child/animal body size, face, proportions, and key markings/clothing across every slide.
+- Keep the product the same scale relative to the subject: do not make it huge in one slide and small in another.
+- For animals, prefer natural poses over extreme/dramatic poses unless the user insists; extreme prompts often create AI-looking bodies, paws, or faces.
+- Negative prompt examples: `different cat`, `fat cat`, `skinny cat`, `kitten`, `distorted paws`, `unnatural body`, `oversized product`, `wrong product scale`.
 
 ### Problem hook slide
 - No product visible.
@@ -67,12 +77,13 @@ Use this skill when the user wants TikTok Shop slideshow images, product-ad prom
 
 ### Product information slide
 - Put main product details here instead of repeating them everywhere.
+- Make it explicit that features describe the **product**, not the pet/person or vague scene. Use wording like `this mat is…`, `mat features…`, or `the mat that finally worked`.
 - Use callouts/arrows to product details.
 - Keep claims grounded in references.
 - Example for a yellow patterned self-cooling pet mat:
-  - Main: `tip 5: use a self-cooling mat`
-  - Callouts: `waterproof`, `non-toxic`, `scratch + bite resistant`
-  - Highlight: `made for hot summer naps`
+  - Main: `the mat that finally worked`
+  - Highlight: `this mat is self-cooling, waterproof + non-toxic`
+  - Small label/callout: `scratch + bite resistant mat`
 
 ### Final proof/CTA slide
 - Show the subject happily using the product.
@@ -81,6 +92,17 @@ Use this skill when the user wants TikTok Shop slideshow images, product-ad prom
   - Main: `he went straight to the cool spot`
   - CTA bottom-left: `Shop Here ↓`
 - No repeated product-info card unless requested.
+
+## Book / digital-product bundle slideshows
+
+Use the same slideshow discipline for book bundles and other non-pet products:
+
+- Extract each title/cover from the user's reference photo and preserve recognizability; book titles may not be perfect, but covers should be close and not warped.
+- Avoid fake phone screenshot borders when regenerating; output clean 3:4 images.
+- If source images look bad, improve realism by changing backgrounds while keeping the same tips/copy.
+- Vary backgrounds by theme: morning desk, finance desk, calm bedside, cafe/reading nook, self-care desk, final bundle flat-lay.
+- Keep the user's visual style: black serif headline + yellow brush highlight. Do not switch to unrelated collage/fantasy imagery.
+- For final bundle slides, show all products at consistent physical size and include `Shop Here ↓` bottom-left if a CTA is needed.
 
 ## Verification checklist
 
@@ -96,3 +118,4 @@ Before delivering:
 - [ ] Style is realistic if the user asked for realistic photos.
 
 See `references/pet-cooling-mat-session.md` for concrete examples from the cat cooling mat workflows.
+See `references/user-style-and-consistency-notes.md` for the user's `my style` visual system, consistency pitfalls, product-info wording, and book-bundle workflow notes.
