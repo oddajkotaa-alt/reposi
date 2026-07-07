@@ -149,6 +149,13 @@ Typography:
 - Vary backgrounds between slides so the carousel does not feel repetitive: e.g. outdoor patio/garden for problem hook, living room for product discovery, bedroom/hallway/window area for comfort proof. Make scene variety explicit in each JSON prompt.
 - When the user supplies exact overlay copy, reproduce it exactly and quality-check spelling/casing before finalizing.
 - When revising prompts, preserve the same product information and improve only visual clarity, hook strength, flow, background variety, and readability unless the user asks for new claims.
+- If the user writes rough/non-native English copy, keep the intent but rewrite it into natural TikTok Shop wording rather than copying awkward phrasing. Example: user idea “I bought him this cooling mat and he is soo chill” → `I got him this cooling mat` / `and he’s already so chill 🧊`.
+- Avoid clever but contextless bridge lines such as `the simple swap` unless a prior slide clearly explains the swap. Each slide’s text should make sense when seen immediately after the previous slide.
+- For 3-slide product carousels, do not repeat the same product specs on slides 2 and 3. Put the product information/callouts on **Slide 2**; make **Slide 3** a clean proof/result + CTA slide.
+- Preferred 3-slide pet cooling-mat copy/structure from user feedback:
+  1. Slide 1: problem hook, no mat, overheated pet visibly uncomfortable.
+  2. Slide 2: `I got him this cooling mat` + `and he’s already so chill 🧊` with concise product callouts such as `quilted cooling surface`, `soft + lightweight`, `easy to move around`, `for cats + dogs`.
+  3. Slide 3: relaxed pet proof with minimal text and bottom-left CTA `Shop Here ↓`; avoid a white product-information square/card on this slide.
 
 ## Direct ChatGPT Image 2 generation workflow
 
