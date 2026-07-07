@@ -12,7 +12,7 @@ Default TikTok Shop prompt format: 3:4, strong first-slide hook.
 §
 User provides reference photos; generated images must preserve exact appearance, avoid exaggerating product size, and avoid unprovided claims.
 §
-Preferred image styles: viral TikTok, realistic lifestyle, UGC/influencer, minimal white, before/after, problem/solution.
+Preferred TikTok Shop image styles: viral realistic lifestyle/UGC, minimal white, before/after, problem/solution; vary backgrounds between slideshow images.
 §
 Preferred Google Flow workflow: Agent generation, Nano Banana Pro, 3:4, upload only two refs (product + cat/person), paste all prompts in one block.
 §
