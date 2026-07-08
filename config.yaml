@@ -108,6 +108,21 @@ memory:
   flush_min_turns: 6
 delegation:
   max_iterations: 50
+moa:
+  presets:
+    default:
+      fanout: per_iteration
+  reference_models:
+    - provider: openai-codex
+      model: gpt-5.5
+    - provider: openrouter
+      model: deepseek/deepseek-v4-pro
+  aggregator:
+    provider: openrouter
+    model: anthropic/claude-opus-4.8
+  max_tokens: 4096
+  fanout: per_iteration
+  enabled: true
 skills:
   creation_nudge_interval: 15
 code_execution:
@@ -168,9 +183,9 @@ platform_toolsets:
   google_chat:
     - hermes-google_chat
 plugins:
-  enabled: []
-  disabled:
+  enabled:
     - browser-browser-use
+  disabled: []
 image_gen:
   provider: openai-codex
   use_gateway: false
