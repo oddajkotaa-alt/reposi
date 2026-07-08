@@ -55,12 +55,49 @@ When the user asks for a **new style by yourself but as visualisations use my st
 
 This pattern means: change copy/concept/scene choices, not the user's typography/ratio/realism standards.
 
+## Whole-person hook option
+
+The user later clarified that a hook can show a **whole girl/full-body lifestyle scene** instead of only cropped no-face details, as long as it still looks like an ordinary natural phone photo.
+
+Use this when requested or when a stronger aspirational hook is useful:
+
+> full-body young woman in a cozy bedroom/desk corner, casual neutral outfit, planner/coffee/gym bag nearby, natural window light, normal iPhone framing, slightly imperfect, not a model photoshoot, no books visible on slide 1.
+
+Guardrails:
+
+- Keep it non-cinematic and non-editorial: ordinary daylight, realistic shadows, normal room, no dramatic color grade.
+- The person must look natural: realistic body, face, hands, and pose; avoid plastic skin or influencer/ad-polish.
+- Still keep the first slide product-free/books-free unless the user asks otherwise.
+- Verify dimensions; this generation pattern may come out slightly off-ratio (e.g. 1087×1447). If so, regenerate/crop to true 3:4 before delivering.
+
+## Quiet luxury study-notes concept
+
+A newer style direction the user accepted: **quiet luxury study notes**.
+
+Visual ingredients:
+
+- natural iPhone-like realism, not cinematic/glossy/editorial
+- beige paper overlays, sticky notes, journal/planner pages, highlighter marks
+- black serif headline + yellow highlighter swipe
+- ordinary desk/bedside/cafe scenes with slight real-life imperfection
+- final CTA still uses bigger bottom-left `Shop Here ↓`
+
+Example copy set:
+
+- Slide 1 hook: `THE BOOKS THAT CHANGED MY MINDSET`; highlight `start with these 5`. Visual can show a whole girl in a cozy bedroom/desk corner; no books.
+- Slide 2 Atomic Habits: `1) build habits you can repeat`; highlight `systems beat motivation`.
+- Slide 3 Psychology of Money: `2) learn how money really works`; highlight `wealth is built quietly`.
+- Slide 4 Don’t Believe Everything You Think: `3) stop fighting your own mind`; highlight `not every thought is true`.
+- Slide 5 The Courage To Be Disliked: `4) stop needing everyone’s approval`; highlight `choose your own life`.
+- Slide 6 The Let Them Theory: `5) let them, then move on`; highlight `protect your peace`.
+- Slide 7 CTA: `build your soft life shelf`; highlight `all five linked below`; CTA `Shop Here ↓`.
+
 ## Style constraint
 
 Keep the user’s visual system for text:
 
 - big black serif headline
-- yellow brush highlight
+- yellow brush/highlighter highlight
 - 3:4 portrait
 - no phone screenshot UI
 - clean readable overlay
