@@ -149,6 +149,17 @@ keep the cover/product recognizable, consistent scale, not warped,
 no extra/missing books, no fake brand text
 ```
 
+## Mixed illustration + UGC photo pet carousel
+
+For a cat cooling-mat carousel, the user supplied long JSON-style prompts that worked as a class pattern:
+
+- Slides 1–6: semi-realistic 2D cel-shaded cartoon illustrations, cozy UK home, charcoal-black serif text, Yale Blue accent text, Naples Yellow rough brushstroke, no boxes/pills/TikTok handle.
+- Slides 1–6 should not show the product; they introduce overheating context and tips.
+- Slide 7: first product reveal as natural iPhone 17 Pro UGC photo, mat only, no cat/hands, low side angle showing slim/flexible profile and feature/spec list.
+- Slide 8: CTA/proof as natural iPhone UGC photo, cat stretched on mat, promotional headline, single yellow brushstroke, bottom-left CTA/arrow.
+- For reference-critical prompts, do not proceed if cat/product reference images are missing from the current session; ask the user to resend them.
+- When compressing user-supplied JSON prompts for the image tool, preserve exact visible text, timing of product reveal, aspect ratio, no-background text treatment, color names/hexes, and the strongest avoid constraints.
+
 ## Final reminder
 
 When user corrects a slide, apply the precise correction. Do not infer a different composition. Examples:

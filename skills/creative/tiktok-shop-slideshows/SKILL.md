@@ -76,6 +76,16 @@ Use problem/lifestyle hooks before showing the product. Examples:
 - lifestyle routine before book reveal
 - pain point before solution
 
+For pet-care/carousel work, a useful pattern is **educational illustrations first, UGC product photos later**:
+
+- slides 1–6: semi-realistic 2D cel-shaded cartoon illustrations for tips/context
+- slide 7: iPhone-style product reveal/photo with product details
+- slide 8: iPhone-style CTA/proof photo with pet on product
+
+Keep the transition intentional: tips are friendly educational visuals; product slides are real-looking TikTok Shop proof. If the user supplies a long structured JSON prompt, preserve exact on-slide text and critical constraints, but compress the prompt for the image tool without dropping reference use, no-product timing, colors, typography, or avoid-list items.
+
+Before generating reference-critical slides, ensure the cat/product/book reference images are available in the current session. If reference files are gone, ask the user to resend them instead of generating from memory.
+
 ### Book slideshows
 
 For women's book slideshows:
