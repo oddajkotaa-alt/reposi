@@ -148,3 +148,4 @@ This invites comments without saying too much like `some people disagree`.
 ## Reference notes
 
 See `references/session-2026-07-slideshow-preferences.md` for detailed lessons from the book, pet cooling mat, and men's/women's slideshow iterations.
+See `references/pet-heat-mixed-style-carousel.md` for the 8-slide pet heat carousel pattern: cartoon educational tips first, realistic UGC product reveal/CTA last, and reference-critical prompt preservation rules.
