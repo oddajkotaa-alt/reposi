@@ -57,7 +57,7 @@ For videos similar to the user's brownie example:
 ## Pitfalls
 
 - Do not ask the user to describe uploaded video content if the file path is available; inspect it.
-- Do not claim the generated voice is an exact copyrighted-character voice.
+- Do not claim the generated voice is an exact copyrighted-character voice. If the user says the video is for private/personal use, you may edit with user-supplied character assets, but still describe generated audio as a gruff/cartoon-style approximation rather than an exact clone.
 - If the first FFmpeg build fails from quoting, simplify captions to avoid apostrophes or escape carefully.
 - If FFmpeg is killed, change strategy: preprocess images and simplify the graph instead of retrying the same command.
 - If captions are long, they will crop in previews; rewrite them shorter and regenerate.

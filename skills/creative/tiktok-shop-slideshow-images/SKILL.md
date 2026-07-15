@@ -110,6 +110,16 @@ Use the same slideshow discipline for book bundles and other non-pet products:
 - For final bundle slides, show all products at consistent physical size and include `Shop Here ↓` bottom-left if a CTA is needed; make `Shop Here ↓` noticeably larger than normal body/callout text.
 - If the user asks for a **new style/concept by yourself** but also says **use my style/visualisations**, invent new copy/story scenes while preserving their visual system: natural iPhone-like realism, black serif typography, yellow brush highlight, 3:4, and non-cinematic lighting.
 
+### Reference-heavy book prompt sets
+
+When the user provides many book references plus a numbered prompt set, preserve the mapping carefully:
+
+- Treat each prompt's described cover as the source of truth for which reference to attach. Do not assume the image order matches the prompt order when the prompt names/describes the cover.
+- For single-book slides, attach exactly that book reference as `image_url`; for a final bundle slide, attach all available book references (within provider limits) so the model can see every cover.
+- Keep the user's supplied baked text exactly when possible, but expect image models to distort text; verify quickly and mention any obvious issue if not regenerating.
+- For luxury-feminine / dark-rich-girl book sets, use dark marble, walnut, brass lamps, black silk, burgundy velvet, pearls, perfume, handbag, city-light bokeh, and warm ivory/champagne serif text. Avoid phone frames, screenshot UI, TikTok handles, black bars, collages, extra books, and redesigned covers.
+- If the user asks for “exact reference” covers, explicitly prompt: “do not recreate from written titles; use attached reference as sole source; do not redesign/recolor/replace cover.”
+
 ## Verification checklist
 
 Before delivering:
@@ -126,3 +136,4 @@ Before delivering:
 See `references/pet-cooling-mat-session.md` for concrete examples from the cat cooling mat workflows.
 See `references/user-style-and-consistency-notes.md` for the user's `my style` visual system, consistency pitfalls, product-info wording, and book-bundle workflow notes.
 See `references/book-bundle-iphone-realism.md` for the latest book-bundle prompt pattern: casual iPhone realism, natural light, no polished AI/editorial look.
+See `references/dark-feminine-book-bundle.md` for the 10-book dark feminine luxury prompt/reference-mapping pattern.
