@@ -109,6 +109,9 @@ Use the same slideshow discipline for book bundles and other non-pet products:
 - Keep the user's visual style: black serif headline + yellow brush highlight. Do not switch to unrelated premium editorial, collage/fantasy, or polished Pinterest imagery unless explicitly asked.
 - For final bundle slides, show all products at consistent physical size and include `Shop Here ↓` bottom-left if a CTA is needed; make `Shop Here ↓` noticeably larger than normal body/callout text.
 - If the user asks for a **new style/concept by yourself** but also says **use my style/visualisations**, invent new copy/story scenes while preserving their visual system: natural iPhone-like realism, black serif typography, yellow brush highlight, 3:4, and non-cinematic lighting.
+- If the user says a hook image looks **blurry**, **AI/editorial**, or asks to make it **normal**, immediately reduce the prompt’s fashion/editorial language. Prefer “casual iPhone photo in a real apartment/room, normal lighting, believable room details, realistic skin/shadows, candid pose” over “hyperrealistic commercial finish,” “cinematic editorial,” “luxury penthouse,” or “perfect model pose.”
+- For emotional/dark book carousels, do not automatically use every book reference provided. Select only the books that fit the theme when the user asks for a smaller/fitting set, and make the final CTA match that count (e.g. “all 5 books,” not the original 10-book bundle).
+- When the user says hook text should be “better,” simplify and restructure text into short stacked lines with a clear highlighted phrase. This tends to work better than long full sentences in image-generation text.
 
 ### Reference-heavy book prompt sets
 
@@ -137,3 +140,4 @@ See `references/pet-cooling-mat-session.md` for concrete examples from the cat c
 See `references/user-style-and-consistency-notes.md` for the user's `my style` visual system, consistency pitfalls, product-info wording, and book-bundle workflow notes.
 See `references/book-bundle-iphone-realism.md` for the latest book-bundle prompt pattern: casual iPhone realism, natural light, no polished AI/editorial look.
 See `references/dark-feminine-book-bundle.md` for the 10-book dark feminine luxury prompt/reference-mapping pattern.
+See `references/dark-emotional-book-carousel.md` for the 5-book dark emotional carousel pattern, including thematic subset selection and hook-text cleanup.

@@ -913,14 +913,14 @@
     "archived_at": null,
     "created_at": "2026-07-07T09:45:52.742428+00:00",
     "created_by": "agent",
-    "last_patched_at": "2026-07-15T12:04:05.100201+00:00",
-    "last_used_at": "2026-07-15T12:03:12.489414+00:00",
-    "last_viewed_at": "2026-07-15T12:03:12.481802+00:00",
-    "patch_count": 23,
+    "last_patched_at": "2026-07-15T14:52:19.943773+00:00",
+    "last_used_at": "2026-07-15T14:51:38.300764+00:00",
+    "last_viewed_at": "2026-07-15T14:51:38.294151+00:00",
+    "patch_count": 26,
     "pinned": false,
     "state": "active",
-    "use_count": 13,
-    "view_count": 13
+    "use_count": 14,
+    "view_count": 14
   },
   "tiktok-shop-slideshows": {
     "archived_at": null,
