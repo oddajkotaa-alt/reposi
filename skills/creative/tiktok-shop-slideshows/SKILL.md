@@ -137,6 +137,19 @@ This invites comments without saying too much like `some people disagree`.
 4. If the user corrects the concept, apply the exact correction immediately; do not defend the previous design.
 5. If only one slide is wrong, regenerate only that slide unless the user asks for the whole slideshow.
 
+## Google Flow automation workflow
+
+When the user wants to automate slideshow generation but keep using Google Flow/Agent because they already have Pro accounts and like the results, do **not** redirect them to a different image API first. Treat Google Flow as the generation backend and automate the surrounding workflow.
+
+Preferred sequence:
+
+1. **Set up VPS browser/noVNC first** if they want generation to continue while their PC is off. This foundation is harder than prompt generation and should be solved before full automation.
+2. Test Google Flow manually in the VPS browser: login, upload references, select Agent generation / Nano Banana Pro / 3:4, paste the prompt block, generate, and download.
+3. Start with semi-automation: folder creation, prompt block preparation, reference file staging, download organization, renaming slides, captions, and optional MP4 assembly.
+4. Only after manual VPS Flow works reliably, automate browser actions: open Flow, upload refs, paste prompt block, start generation, wait, download, and optionally rotate browser profiles/accounts.
+
+Google Flow Agent note: if Agent can accept all photo references and all prompts in one block, prefer that over one-image-at-a-time automation. The user's preferred Flow setup remains: Agent generation, Nano Banana Pro, 3:4, upload only the needed references (usually product + cat/person/style), paste all prompts in one block.
+
 ## Common pitfalls
 
 - **Mistaking composition for product display**: When the user references a hook collage, they may want the same type of composition, not the book/product shown.

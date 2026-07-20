@@ -212,13 +212,13 @@
     "created_at": "2026-07-06T11:20:10.664901+00:00",
     "created_by": null,
     "last_patched_at": null,
-    "last_used_at": "2026-07-06T14:21:16.322817+00:00",
-    "last_viewed_at": "2026-07-06T14:21:16.318434+00:00",
+    "last_used_at": "2026-07-20T20:44:04.363951+00:00",
+    "last_viewed_at": "2026-07-20T20:44:04.353671+00:00",
     "patch_count": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 2,
-    "view_count": 2
+    "use_count": 3,
+    "view_count": 3
   },
   "design-md": {
     "archived_at": null,
@@ -926,14 +926,14 @@
     "archived_at": null,
     "created_at": "2026-07-08T10:20:18.579021+00:00",
     "created_by": "agent",
-    "last_patched_at": "2026-07-13T15:15:46.219434+00:00",
-    "last_used_at": "2026-07-20T20:30:57.599194+00:00",
-    "last_viewed_at": "2026-07-20T20:30:57.564880+00:00",
-    "patch_count": 5,
+    "last_patched_at": "2026-07-20T20:57:32.210500+00:00",
+    "last_used_at": "2026-07-20T20:57:18.085923+00:00",
+    "last_viewed_at": "2026-07-20T20:57:18.076328+00:00",
+    "patch_count": 6,
     "pinned": false,
     "state": "active",
-    "use_count": 5,
-    "view_count": 5
+    "use_count": 6,
+    "view_count": 6
   },
   "touchdesigner-mcp": {
     "archived_at": null,
@@ -947,6 +947,19 @@
     "state": "active",
     "use_count": 0,
     "view_count": 0
+  },
+  "vps-browser-desktop-novnc": {
+    "archived_at": null,
+    "created_at": "2026-07-20T21:24:45.477961+00:00",
+    "created_by": "agent",
+    "last_patched_at": "2026-07-20T21:25:08.535577+00:00",
+    "last_used_at": "2026-07-20T21:25:02.130564+00:00",
+    "last_viewed_at": "2026-07-20T21:25:02.124235+00:00",
+    "patch_count": 2,
+    "pinned": false,
+    "state": "active",
+    "use_count": 1,
+    "view_count": 1
   },
   "weights-and-biases": {
     "archived_at": null,
