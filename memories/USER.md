@@ -8,6 +8,6 @@ Image refs: preserve appearance/scale/anatomy, avoid oversized products/unprovid
 §
 Preferred Google Flow workflow: Agent generation, Nano Banana Pro, 3:4, upload only two refs, paste prompts in one block; user has multiple Pro accounts and wants to automate around Flow, not replace it.
 §
-User runs Hermes on a VPS and wants VPS/noVNC browser automation that can continue if PC is off; user is beginner-level with VPS/Linux and needs one-command-at-a-time instructions, reassurance that silent commands often mean success, and plain-English error explanations.
+User runs Hermes on a VPS for noVNC/browser automation that continues if PC is off; beginner with VPS/Linux, needs one-command-at-a-time steps, clear terminal-vs-browser distinction, reassurance on silent commands, and plain-English errors.
 §
 User likes TikTok Shop tips/copy that encourage comments or debate while staying safe; they want rough English corrected into natural ad wording.
