@@ -79,6 +79,8 @@ If the user says they already has their own GPT/custom instructions for prompt c
 - Do not type passwords, 2FA codes, API keys, payment details, cookies, or other private secrets.
 - If Google Flow or any browser tool shows login, CAPTCHA, payment, permission, or account-security prompts, stop and ask the user to handle it.
 - Browser/computer-use automation can only control the browser environment Hermes can access. If Hermes runs on a VPS and Google Flow is open on the user's PC, direct automation cannot reach that PC browser; use local Hermes on the PC, or run a VPS browser/noVNC session that the user logs into manually.
+- When the user already has custom GPT instructions/prompts, treat Hermes as the Flow operator: use the user's supplied prompt rather than rewriting their style, unless they explicitly ask for prompt improvement.
+- For Google Flow Agent reliability, avoid one huge multi-product/multi-slide prompt when it causes grids, collages, or wrong product/book matching. Prefer an automation loop that generates one slide at a time with the relevant product/book reference plus style references, then downloads/organizes each result.
 - Warn that website UI automation can break if the layout changes.
 
 ## Useful support files
