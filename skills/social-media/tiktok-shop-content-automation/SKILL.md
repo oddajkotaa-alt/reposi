@@ -39,7 +39,11 @@ For this user's TikTok Shop slideshow image prompts, consult `references/tiktok-
 2. **Collect reference assets when generating product images**
    - Product reference photo(s) are the source of truth for color, shape, label, material, pattern, thickness, and scale.
    - Pet/person/character references are the source of truth for markings, appearance, and continuity across slides.
+   - For VPS/noVNC Google Flow, the browser can only attach files that exist on the VPS, not files on the user's PC. Create a simple upload folder such as `/home/flowdesk/flow-uploads/books`, run `chown -R flowdesk:flowdesk /home/flowdesk/flow-uploads`, and have the user select files from `Home → flow-uploads → books` in the Flow upload dialog.
+   - When the user mainly uses Telegram, prefer the workflow: Telegram image → Hermes cache → copy/move to `/home/flowdesk/flow-uploads/<campaign>/` → user selects it in Google Flow.
    - When checking whether Telegram-uploaded images arrived, search `.jpg`, `.jpeg`, `.png`, `.webp`, and `.heic` sorted by modification time; gateways may not use the extension you expect.
+   - In Docker deployments, the VPS host may not see the Hermes cache path directly. If the host shell gets `cp: cannot stat '/opt/data/cache/images/...'`, use `docker cp hermes-agent:/opt/data/cache/images/<file> /home/flowdesk/flow-uploads/books/<name>` or the watcher script below.
+   - For the user's desired Telegram-first workflow, do not make them run per-image copy commands every time. Install/run `scripts/flow-image-sync.sh` on the VPS host as root so new Telegram images automatically appear in the Flow upload folder as `telegram-reference-01.jpeg`, etc.
 
 3. **Generate prompt batch once**
    - Ask the model for a numbered list or CSV-ready list.
@@ -79,3 +83,4 @@ For this user's TikTok Shop slideshow image prompts, consult `references/tiktok-
 - `references/google-flow-batch-workflow.md` — practical outline for batching prompts into Google Flow while saving GPT usage.
 - `references/tiktok-shop-json-carousel-system.md` — preferred JSON/one-block carousel prompt system for this user's TikTok Shop slideshow images, including 3:4 locking, reference-image accuracy, claim-safety, slide arcs, Google Flow Agent usage, and image-cache debugging.
 - `references/google-flow-agent-carousel-workflow.md` — concise Google Flow Agent workflow for uploading two references once, pasting one full carousel prompt block, preserving product-claim safety, and choosing a workable browser automation setup.
+- `scripts/flow-image-sync.sh` — VPS-host helper script for automatically copying Telegram-uploaded images from a Hermes Docker container into the noVNC user's Google Flow upload folder.

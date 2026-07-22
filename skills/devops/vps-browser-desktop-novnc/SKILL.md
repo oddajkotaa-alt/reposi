@@ -50,8 +50,10 @@ Use this when the user wants a VPS-hosted browser/desktop they can open from the
    - `runuser -u flowdesk -- vncserver :1 -geometry 1280x1700 -depth 24 -localhost yes`
 8. Start noVNC/websockify on public port 6080 forwarding to local VNC 5901:
    - `websockify --web /usr/share/novnc 0.0.0.0:6080 localhost:5901`
-9. Launch Chromium into the VNC display:
-   - `runuser -u flowdesk -- env DISPLAY=:1 chromium --no-first-run --disable-dev-shm-usage --password-store=basic 'https://labs.google/fx/tools/flow' &`
+9. Launch a browser into the VNC display. Prefer Google Chrome if available because it may preserve the user's previous Google Flow login and avoids Snap Chromium issues:
+   - `command -v google-chrome || command -v google-chrome-stable || command -v firefox || command -v firefox-esr || command -v chromium || command -v chromium-browser`
+   - `runuser -u flowdesk -- bash -lc 'cd /home/flowdesk && DISPLAY=:1 HOME=/home/flowdesk XDG_RUNTIME_DIR=/tmp google-chrome --no-first-run --disable-dev-shm-usage --password-store=basic https://labs.google/fx/tools/flow' &`
+   - Chromium fallback: `runuser -u flowdesk -- env DISPLAY=:1 chromium --no-first-run --disable-dev-shm-usage --password-store=basic 'https://labs.google/fx/tools/flow' &`
 10. Tell the user the exact URL:
    - `http://SERVER_IP:6080/vnc.html?host=SERVER_IP&port=6080`
 
@@ -111,21 +113,35 @@ If `vncserver :1 ...` exits with `The X session exited with status 1!` or sugges
    - `runuser -u flowdesk -- vncserver :1 -geometry 1280x1700 -depth 24 -localhost yes -xstartup /usr/bin/xterm`
 5. If xterm works but XFCE fails, fix XFCE/dbus startup; if xterm also exits, the `.vnc/*.log` is the source of truth.
 
-## Launching Chromium after an xterm fallback
+## Launching a browser after an xterm fallback
 
-If XFCE crashes but `-xstartup /usr/bin/xterm` works, the user may only see a small white xterm window in noVNC. For beginners, do not force them to paste long commands into that white terminal. Prefer launching Chromium from the root SSH terminal into display `:1`:
+If XFCE crashes but `-xstartup /usr/bin/xterm` works, the user may only see a small white xterm window in noVNC. For beginners, do not force them to paste long commands into that white terminal. Prefer launching the browser from the root SSH terminal into display `:1`.
+
+First discover which browser is available. Prefer `google-chrome` / `google-chrome-stable` when present, because it is more likely to preserve the user's previous Google Flow login and avoids Ubuntu Snap Chromium VNC issues:
 
 ```bash
-runuser -u flowdesk -- bash -lc 'cd /home/flowdesk && DISPLAY=:1 HOME=/home/flowdesk XDG_RUNTIME_DIR=/tmp chromium https://labs.google/fx/tools/flow' &
+command -v google-chrome || command -v google-chrome-stable || command -v firefox || command -v firefox-esr || command -v chromium || command -v chromium-browser
+```
+
+Google Chrome launch:
+
+```bash
+runuser -u flowdesk -- bash -lc 'cd /home/flowdesk && DISPLAY=:1 HOME=/home/flowdesk XDG_RUNTIME_DIR=/tmp google-chrome --no-first-run --disable-dev-shm-usage --password-store=basic https://labs.google/fx/tools/flow' &
+```
+
+Chromium fallback:
+
+```bash
+runuser -u flowdesk -- bash -lc 'cd /home/flowdesk && DISPLAY=:1 HOME=/home/flowdesk XDG_RUNTIME_DIR=/tmp chromium --no-first-run --disable-dev-shm-usage --password-store=basic https://labs.google/fx/tools/flow' &
 ```
 
 Fallback binary name:
 
 ```bash
-runuser -u flowdesk -- bash -lc 'cd /home/flowdesk && DISPLAY=:1 HOME=/home/flowdesk XDG_RUNTIME_DIR=/tmp chromium-browser https://labs.google/fx/tools/flow' &
+runuser -u flowdesk -- bash -lc 'cd /home/flowdesk && DISPLAY=:1 HOME=/home/flowdesk XDG_RUNTIME_DIR=/tmp chromium-browser --no-first-run --disable-dev-shm-usage --password-store=basic https://labs.google/fx/tools/flow' &
 ```
 
-If the user launches Chromium from the noVNC xterm and sees `/run/user/0/bus: permission denied` or snap cgroup warnings, it often means Chromium is being started from `/root`/wrong runtime context. Have them use the SSH command above, or in the xterm run `cd ~` and set `HOME=/home/flowdesk XDG_RUNTIME_DIR=/tmp` before Chromium.
+If Chromium prints Snap errors such as `/run/user/0/bus: permission denied`, `cannot start document portal`, or `not a snap cgroup`, stop trying Snap Chromium and use `google-chrome` or Firefox if available. If a foreground browser command appears to do nothing and no prompt returns, explain that the browser may still be running; use `Ctrl+C` only if it clearly failed to open in noVNC and you need to recover the terminal. Avoid giving a second long launch command while the first is still printing output, because beginners can accidentally paste into the middle of the command and create a broken `chromium-brow&...` line.
 
 ## Verification
 
@@ -145,4 +161,5 @@ If the user launches Chromium from the noVNC xterm and sees `/run/user/0/bus: pe
 - Beginners may paste `http://.../vnc.html` into the VPS terminal. Explain: commands go in the VPS terminal; website links go in their normal browser address bar.
 - A shell job error like `[2]+ Exit 127 http://...` is usually leftover from a URL pasted into the terminal, not evidence about noVNC.
 - If the user is stuck in the white xterm inside noVNC and cannot paste/type reliably, stop giving xterm paste instructions. Tell them to leave noVNC open and use the black/root SSH terminal to launch apps into `DISPLAY=:1`.
+- If copy/paste into a noVNC browser field fails, tell the user to open the noVNC side drawer/clipboard panel, paste the text there first, then click the web app field and press `Ctrl+V`. This is often the easiest way to paste long Google Flow prompts.
 - Do not claim installation succeeded unless verified by command output or user confirmation.
