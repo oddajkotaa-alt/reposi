@@ -6,7 +6,7 @@ TikTok Shop defaults: 3:4, strong first-slide hook/no product unless requested, 
 §
 Image refs: preserve appearance/scale/anatomy, avoid oversized products/unprovided claims, vary backgrounds. “My style” = example fonts/colors/yellow highlights + natural iPhone realism; CTA “Shop Here” bigger.
 §
-Google Flow: Agent generation, Nano Banana Pro, 3:4, upload only two refs, paste one prompt block; user has multiple Pro accounts and wants VPS/noVNC automation around Flow, not replacement.
+Google Flow: Agent generation, Nano Banana Pro, 3:4, VPS/noVNC automation; when screenshot/style refs are supplied, prompts must match them and use exact product/book refs, not invent a new style.
 §
 User runs Hermes on a VPS for noVNC/browser automation while PC is off; beginner with VPS/Linux, needs one-command-at-a-time steps and terminal-vs-browser distinction.
 §

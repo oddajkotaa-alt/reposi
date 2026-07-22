@@ -113,6 +113,20 @@ Use the same slideshow discipline for book bundles and other non-pet products:
 - For emotional/dark book carousels, do not automatically use every book reference provided. Select only the books that fit the theme when the user asks for a smaller/fitting set, and make the final CTA match that count (e.g. “all 5 books,” not the original 10-book bundle).
 - When the user says hook text should be “better,” simplify and restructure text into short stacked lines with a clear highlighted phrase. This tends to work better than long full sentences in image-generation text.
 
+### Google Flow / Nano Banana prompt packs
+
+When the user asks for **Flow test**, **Google Flow prompts**, or says they are using Flow/Nano Banana:
+
+- Do **not** generate images locally unless explicitly asked; produce copy-pasteable Flow prompts and a short setup guide.
+- Start with Flow settings: `Nano Banana Pro` (or best available image model), `3:4 portrait`, and which references to upload per slide.
+- If the user sends **slideshow example screenshots**, treat those as the style source; summarize the style before writing prompts.
+- For book slides, tell Flow to attach **style screenshots + the one matching book reference**. For the final bundle slide, attach **style screenshots + all needed book references**.
+- If the user says “only use books that fit,” select the thematic subset rather than forcing every provided book into the carousel.
+- Keep Flow prompts practical: example style, exact book-reference preservation, scene, baked text, and negatives. Avoid long JSON unless the user specifically wants JSON preserved.
+- For the user's current Flow book examples, the target style is often: realistic iPhone-style TikTok Shop book slideshow, book held close to camera or placed naturally, premium apartment/balcony/car/bedroom lifestyle backgrounds, blue-hour evening light mixed with warm lamp light, large elegant gold serif quote text, no text box/brushstroke/TikTok UI/watermark/collage.
+
+See `references/google-flow-book-carousel.md` for the Flow prompt workflow and the style-extraction pattern from this session.
+
 ### Reference-heavy book prompt sets
 
 When the user provides many book references plus a numbered prompt set, preserve the mapping carefully:

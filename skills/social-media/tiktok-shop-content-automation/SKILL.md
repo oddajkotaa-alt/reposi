@@ -27,6 +27,8 @@ This is especially important when the user is worried about GPT limits or cost.
 
 For this user's TikTok Shop slideshow image prompts, consult `references/tiktok-shop-json-carousel-system.md` for the preferred JSON carousel structure and `references/google-flow-agent-carousel-workflow.md` for the one-block Google Flow Agent workflow.
 
+If the user says they already has their own GPT/custom instructions for prompt creation, switch to **operator mode** instead of continuing to rewrite prompts: accept their ready prompt via Telegram, handle image intake, copy/upload references to the VPS Google Flow browser, paste the prompt, generate, download, and return results. See `references/telegram-to-google-flow-operator-workflow.md`.
+
 1. **Collect product inputs**
    - Product name
    - Main benefit/problem solved
@@ -58,6 +60,7 @@ For this user's TikTok Shop slideshow image prompts, consult `references/tiktok-
    - If an API exists, prefer API automation.
    - If no API exists, use browser automation or Playwright/Selenium.
    - Browser automation loop: open tool → paste prompt → generate → wait → download/save → mark row done.
+   - For Google Flow Agent with many book/product references, prefer generating one slide at a time. Upload/use one product reference plus one or two style references, paste a prompt that says `Create exactly ONE image only`, generate, download, then repeat. A single prompt for 5+ book slides often creates grids/collages or wrong books.
 
 5. **Verify outputs**
    - Confirm files actually downloaded.
