@@ -1,4 +1,4 @@
-User prefers beginner-friendly copy-paste steps, asks before big changes/deletes, does not want private data saved, and mainly uses Hermes via Telegram.
+User prefers beginner-friendly copy-paste steps, asks before big changes/deletes, avoids saving private data, mainly uses Telegram, and wants one main Hermes setup that remembers Flow/TikTok workflow.
 §
 User creates TikTok Shop slideshows/faceless videos; wants prompts, image/video creation, MP4 assembly, reusable systems, and natural English ad copy.
 §
