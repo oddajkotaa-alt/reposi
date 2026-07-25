@@ -72,6 +72,11 @@ docker ps --format '{{.Names}}'
 1. Make Telegram image intake reliable and identify newest images.
 2. Copy/upload images to a stable Flow upload folder on the VPS.
 3. Save or parse the user's ready prompt from Telegram.
-4. Drive the browser/noVNC session to upload references and paste prompt.
-5. Generate one slide at a time when product/reference accuracy matters.
-6. Download/organize outputs and deliver results back to Telegram.
+4. Ensure the Telegram-connected Hermes is the same Hermes that can control the VPS browser. If Telegram is connected to Docker Hermes but `computer_use` only works from host Hermes, switch the gateway to host Hermes before trying browser automation; otherwise the user will be stuck relaying commands between two agents.
+5. Drive the browser/noVNC session to upload references and paste prompt.
+6. Generate one slide at a time when product/reference accuracy matters.
+7. Download/organize outputs and deliver results back to Telegram.
+
+## User-correction lesson
+
+If the user says they already have their own GPT instructions/prompting style, stop iterating on creative prompts and focus on wiring the automation. Acknowledge the correction directly, switch to operator mode, and give new setup steps rather than repeating prompt variants. The desired outcome is “send request/images in Telegram → Hermes operates Flow → results return in Telegram,” not more manual prompt coaching.

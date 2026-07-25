@@ -96,6 +96,7 @@ apt-get update
 ## References
 
 - `references/google-flow-contabo-vps.md` records a concrete Contabo/Google Flow troubleshooting session, including Docker apt key repair and beginner wording.
+- `references/host-hermes-flow-gateway-switch.md` records the Docker-Hermes-to-host-Hermes split pattern for Telegram-connected Google Flow browser automation, including `DISPLAY`, `XAUTHORITY`, `cua-driver`, stale gateway PID files, and beginner-friendly recovery steps.
 
 ## VNC startup crash troubleshooting
 
