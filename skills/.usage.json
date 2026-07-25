@@ -147,13 +147,13 @@
     "created_at": "2026-07-06T15:38:47.668292+00:00",
     "created_by": null,
     "last_patched_at": null,
-    "last_used_at": "2026-07-25T14:28:42.232813+00:00",
-    "last_viewed_at": "2026-07-25T14:28:42.222405+00:00",
+    "last_used_at": "2026-07-25T16:35:25.084777+00:00",
+    "last_viewed_at": "2026-07-25T16:35:25.069117+00:00",
     "patch_count": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 2,
-    "view_count": 2
+    "use_count": 3,
+    "view_count": 3
   },
   "claude-code": {
     "archived_at": null,
@@ -225,13 +225,13 @@
     "created_at": "2026-07-06T11:20:10.664901+00:00",
     "created_by": null,
     "last_patched_at": null,
-    "last_used_at": "2026-07-25T13:36:34.419200+00:00",
-    "last_viewed_at": "2026-07-25T13:36:34.408493+00:00",
+    "last_used_at": "2026-07-25T16:42:10.019752+00:00",
+    "last_viewed_at": "2026-07-25T16:42:09.989867+00:00",
     "patch_count": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 7,
-    "view_count": 7
+    "use_count": 8,
+    "view_count": 8
   },
   "containerized-desktop-automation": {
     "archived_at": null,
@@ -389,6 +389,19 @@
     "use_count": 0,
     "view_count": 0
   },
+  "google-flow-automation": {
+    "archived_at": null,
+    "created_at": "2026-07-25T16:54:23.127225+00:00",
+    "created_by": "agent",
+    "last_patched_at": "2026-07-25T16:54:36.420469+00:00",
+    "last_used_at": null,
+    "last_viewed_at": null,
+    "patch_count": 1,
+    "pinned": false,
+    "state": "active",
+    "use_count": 0,
+    "view_count": 0
+  },
   "google-workspace": {
     "archived_at": null,
     "created_at": "2026-07-12T18:58:03.997597+00:00",
@@ -420,26 +433,26 @@
     "created_at": "2026-07-06T11:24:14.743712+00:00",
     "created_by": null,
     "last_patched_at": null,
-    "last_used_at": "2026-07-25T15:08:21.344631+00:00",
-    "last_viewed_at": "2026-07-25T15:08:21.333854+00:00",
+    "last_used_at": "2026-07-25T16:55:22.018690+00:00",
+    "last_viewed_at": "2026-07-25T16:55:22.011072+00:00",
     "patch_count": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 7,
-    "view_count": 7
+    "use_count": 8,
+    "view_count": 8
   },
   "hermes-agent-skill-authoring": {
     "archived_at": null,
     "created_at": "2026-07-12T18:58:04.019888+00:00",
     "created_by": null,
     "last_patched_at": null,
-    "last_used_at": null,
-    "last_viewed_at": null,
+    "last_used_at": "2026-07-25T16:45:59.100912+00:00",
+    "last_viewed_at": "2026-07-25T16:45:59.089351+00:00",
     "patch_count": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 0,
-    "view_count": 0
+    "use_count": 1,
+    "view_count": 1
   },
   "hermes-agent/hermes-proxy-integrations": {
     "archived_at": null,
@@ -628,13 +641,13 @@
     "created_at": "2026-07-12T18:58:04.182293+00:00",
     "created_by": null,
     "last_patched_at": null,
-    "last_used_at": null,
-    "last_viewed_at": null,
+    "last_used_at": "2026-07-25T17:07:43.622231+00:00",
+    "last_viewed_at": "2026-07-25T17:07:43.593638+00:00",
     "patch_count": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 0,
-    "view_count": 0
+    "use_count": 1,
+    "view_count": 1
   },
   "ocr-and-documents": {
     "archived_at": null,
