@@ -93,6 +93,15 @@ Step 3: 對比聲稱效果 vs 實際效果
 Step 4: 判斷「啱唔啱我哋用」先決定安裝
 Step 5: 如果唔啱用就 uninstall（`pip3 uninstall` / `brew uninstall`）
 
+## Integration install pattern: tool vs config change
+
+When an open-source project is an **agent integration** rather than just a skill file, separate the work into two phases:
+
+1. **Install safely** — clone/update into a dedicated directory, inspect README/install script/pyproject, install into its own venv, add a launcher if needed, and verify `--help`, version/import, and status.
+2. **Configure later with user consent** — do not run setup/start commands that rewrite Hermes config, change model routing, start proxies, enable sharing, or modify skill directories until the user agrees and understands the choices.
+
+For SkillClaw specifically, see `references/skillclaw-hermes-install.md`.
+
 ## 常見陷阱
 - 直接clone大型project落workspace
 - 1:1抄襲（格式唔兼容）
@@ -100,5 +109,6 @@ Step 5: 如果唔啱用就 uninstall（`pip3 uninstall` / `brew uninstall`）
 - 冇用白話向師兄解釋
 - 只睇README，冇睇 shortform/longform guide（ECC 嘅真正精華喺 guides 入面）
 - 冇考慮自己 harness（Claude Code vs Hermes Agent）嘅差異就照抄
+- Treating an integration package like a normal `SKILL.md`; install can be safe, but setup may rewrite agent config or route traffic through a proxy.
 - **信咗聲稱數字就裝，冇用自己嘅真實數據做測試**（headroom case）
 - **冇 check 個工具係咪設計俾自己嘅使用場景**（headroom 係為 tool output 設計，唔係 prose/dialogue）

@@ -134,13 +134,13 @@
     "created_at": "2026-07-06T15:38:47.668292+00:00",
     "created_by": null,
     "last_patched_at": null,
-    "last_used_at": "2026-07-06T15:38:47.672206+00:00",
-    "last_viewed_at": "2026-07-06T15:38:47.668344+00:00",
+    "last_used_at": "2026-07-25T14:28:42.232813+00:00",
+    "last_viewed_at": "2026-07-25T14:28:42.222405+00:00",
     "patch_count": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 1,
-    "view_count": 1
+    "use_count": 2,
+    "view_count": 2
   },
   "claude-code": {
     "archived_at": null,
@@ -212,13 +212,26 @@
     "created_at": "2026-07-06T11:20:10.664901+00:00",
     "created_by": null,
     "last_patched_at": null,
-    "last_used_at": "2026-07-22T14:13:01.044900+00:00",
-    "last_viewed_at": "2026-07-22T14:13:01.031546+00:00",
+    "last_used_at": "2026-07-25T13:36:34.419200+00:00",
+    "last_viewed_at": "2026-07-25T13:36:34.408493+00:00",
     "patch_count": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 6,
-    "view_count": 6
+    "use_count": 7,
+    "view_count": 7
+  },
+  "containerized-desktop-automation": {
+    "archived_at": null,
+    "created_at": "2026-07-25T13:37:32.221070+00:00",
+    "created_by": "agent",
+    "last_patched_at": "2026-07-25T13:37:47.020294+00:00",
+    "last_used_at": null,
+    "last_viewed_at": null,
+    "patch_count": 1,
+    "pinned": false,
+    "state": "active",
+    "use_count": 0,
+    "view_count": 0
   },
   "design-md": {
     "archived_at": null,
@@ -394,13 +407,13 @@
     "created_at": "2026-07-06T11:24:14.743712+00:00",
     "created_by": null,
     "last_patched_at": null,
-    "last_used_at": "2026-07-25T12:38:26.229525+00:00",
-    "last_viewed_at": "2026-07-25T12:38:26.216532+00:00",
+    "last_used_at": "2026-07-25T14:14:24.950392+00:00",
+    "last_viewed_at": "2026-07-25T14:14:24.943555+00:00",
     "patch_count": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 4,
-    "view_count": 4
+    "use_count": 6,
+    "view_count": 6
   },
   "hermes-agent-skill-authoring": {
     "archived_at": null,
@@ -596,6 +609,32 @@
     "state": "active",
     "use_count": 0,
     "view_count": 0
+  },
+  "open-source-adaptation-pattern": {
+    "archived_at": null,
+    "created_at": "2026-07-25T14:22:48.983048+00:00",
+    "created_by": null,
+    "last_patched_at": "2026-07-25T14:23:16.803886+00:00",
+    "last_used_at": "2026-07-25T14:22:48.990319+00:00",
+    "last_viewed_at": "2026-07-25T14:22:48.983147+00:00",
+    "patch_count": 2,
+    "pinned": false,
+    "state": "active",
+    "use_count": 1,
+    "view_count": 1
+  },
+  "openclaw-hermes-arch": {
+    "archived_at": null,
+    "created_at": "2026-07-25T14:31:28.794361+00:00",
+    "created_by": null,
+    "last_patched_at": "2026-07-25T14:31:45.119559+00:00",
+    "last_used_at": "2026-07-25T14:31:28.822262+00:00",
+    "last_viewed_at": "2026-07-25T14:31:28.794424+00:00",
+    "patch_count": 1,
+    "pinned": false,
+    "state": "active",
+    "use_count": 1,
+    "view_count": 1
   },
   "opencode": {
     "archived_at": null,
