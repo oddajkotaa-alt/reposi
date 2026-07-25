@@ -1,794 +1,810 @@
 {
   "apple-notes": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "apple-reminders": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "findmy": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "imessage": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "claude-code": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "codex": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "hermes-agent": {
-    "inject_count": 2,
+    "inject_count": 16,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "opencode": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "autonomous-work-signaling": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "batch-skill-description-standardization": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "checkpoints-and-rewind": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "computer-use": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "context-aware-task-decomposition": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "context-compaction-verification-and-recovery": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "architecture-diagram": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "ascii-art": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "ascii-video": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "baoyu-infographic": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "claude-design": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "comfyui": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "design-md": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "excalidraw": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "humanizer": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "manim-video": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "p5js": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "popular-web-designs": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "pretext": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "sketch": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "songwriting-and-ai-music": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "tiktok-shop-slideshow-images": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "tiktok-shop-slideshows": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "touchdesigner-mcp": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "cross-session-execution-framework": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "jupyter-live-kernel": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "containerized-desktop-automation": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "vps-browser-desktop-novnc": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "dogfood": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "himalaya": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "codebase-inspection": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "github-auth": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "github-code-review": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "github-issues": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "github-pr-workflow": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "github-repo-management": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "hermes-improvement-multiphase-plan": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "hermes-tweet": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "gif-search": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "heartmula": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "short-form-character-videos": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "songsee": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "youtube-content": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "evaluating-llms-harness": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "weights-and-biases": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "huggingface-hub": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "llama-cpp": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "serving-llms-vllm": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "audiocraft-audio-generation": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "segment-anything-model": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "multi-agent-browser-text-extraction": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "multi-role-synthesis-framework": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "obsidian": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "open-source-adaptation-pattern": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "openclaw-hermes-arch": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "plan": {
-    "inject_count": 2,
+    "inject_count": 16,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "airtable": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "google-workspace": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "maps": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "nano-pdf": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "notion": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "ocr-and-documents": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "petdex": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "powerpoint": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "teams-meeting-pipeline": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "requesting-code-review": {
-    "inject_count": 2,
+    "inject_count": 16,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "arxiv": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "blogwatcher": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "llm-wiki": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "polymarket": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "research-paper-writing": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "router-learning-system": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "security-hardening-checklist": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "self-regulation-brake-system": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "skill-slimming-strategy": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "openhue": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "tiktok-shop-content-automation": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "xurl": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "hermes-agent-skill-authoring": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "node-inspect-debugger": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "python-debugpy": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "simplify-code": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "spike": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "systematic-debugging": {
-    "inject_count": 2,
+    "inject_count": 16,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "test-driven-development": {
-    "inject_count": 2,
+    "inject_count": 16,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "spec-driven-development": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "subagent-driven-development": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "think-tool": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "token-efficiency": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "writing-plans": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   },
   "yuanbao": {
-    "inject_count": 1,
+    "inject_count": 8,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,
-    "last_injected_at": "2026-07-25T14:30:11",
+    "last_injected_at": "2026-07-25T16:19:06",
+    "effectiveness": 0.5
+  },
+  "agent-skill-proxy-integration": {
+    "inject_count": 7,
+    "positive_count": 0,
+    "negative_count": 0,
+    "neutral_count": 0,
+    "last_injected_at": "2026-07-25T16:19:06",
+    "effectiveness": 0.5
+  },
+  "hermes-proxy-integrations": {
+    "inject_count": 5,
+    "positive_count": 0,
+    "negative_count": 0,
+    "neutral_count": 0,
+    "last_injected_at": "2026-07-25T16:19:06",
     "effectiveness": 0.5
   }
 }

@@ -4,13 +4,13 @@
     "created_at": "2026-07-25T15:30:24.085838+00:00",
     "created_by": "agent",
     "last_patched_at": "2026-07-25T15:30:40.610378+00:00",
-    "last_used_at": null,
-    "last_viewed_at": null,
+    "last_used_at": "2026-07-25T16:14:51.535944+00:00",
+    "last_viewed_at": "2026-07-25T16:14:51.529119+00:00",
     "patch_count": 1,
     "pinned": false,
     "state": "active",
-    "use_count": 0,
-    "view_count": 0
+    "use_count": 1,
+    "view_count": 1
   },
   "airtable": {
     "archived_at": null,
@@ -440,6 +440,32 @@
     "state": "active",
     "use_count": 0,
     "view_count": 0
+  },
+  "hermes-agent/hermes-proxy-integrations": {
+    "archived_at": null,
+    "created_at": "2026-07-25T16:14:55.458315+00:00",
+    "created_by": null,
+    "last_patched_at": null,
+    "last_used_at": "2026-07-25T16:19:58.383893+00:00",
+    "last_viewed_at": "2026-07-25T16:19:58.372540+00:00",
+    "patch_count": 0,
+    "pinned": false,
+    "state": "active",
+    "use_count": 2,
+    "view_count": 2
+  },
+  "hermes-proxy-integrations": {
+    "archived_at": null,
+    "created_at": "2026-07-25T15:41:52.405990+00:00",
+    "created_by": "agent",
+    "last_patched_at": "2026-07-25T16:20:41.356560+00:00",
+    "last_used_at": "2026-07-25T16:19:53.689484+00:00",
+    "last_viewed_at": "2026-07-25T16:19:53.666806+00:00",
+    "patch_count": 8,
+    "pinned": false,
+    "state": "active",
+    "use_count": 5,
+    "view_count": 5
   },
   "himalaya": {
     "archived_at": null,
@@ -914,13 +940,13 @@
     "created_at": "2026-07-12T18:58:04.417274+00:00",
     "created_by": null,
     "last_patched_at": null,
-    "last_used_at": null,
-    "last_viewed_at": null,
+    "last_used_at": "2026-07-25T16:18:01.970072+00:00",
+    "last_viewed_at": "2026-07-25T16:18:01.799955+00:00",
     "patch_count": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 0,
-    "view_count": 0
+    "use_count": 1,
+    "view_count": 1
   },
   "teams-meeting-pipeline": {
     "archived_at": null,
@@ -943,6 +969,19 @@
     "last_used_at": null,
     "last_viewed_at": null,
     "patch_count": 0,
+    "pinned": false,
+    "state": "active",
+    "use_count": 0,
+    "view_count": 0
+  },
+  "third-party-hermes-skill-management": {
+    "archived_at": null,
+    "created_at": "2026-07-25T16:32:32.275394+00:00",
+    "created_by": "agent",
+    "last_patched_at": "2026-07-25T16:32:47.682114+00:00",
+    "last_used_at": null,
+    "last_viewed_at": null,
+    "patch_count": 1,
     "pinned": false,
     "state": "active",
     "use_count": 0,
@@ -1044,13 +1083,13 @@
     "created_at": "2026-07-12T18:58:04.472946+00:00",
     "created_by": null,
     "last_patched_at": null,
-    "last_used_at": null,
-    "last_viewed_at": null,
+    "last_used_at": "2026-07-25T16:25:01.620297+00:00",
+    "last_viewed_at": "2026-07-25T16:25:01.605094+00:00",
     "patch_count": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 0,
-    "view_count": 0
+    "use_count": 1,
+    "view_count": 1
   },
   "yuanbao": {
     "archived_at": null,
