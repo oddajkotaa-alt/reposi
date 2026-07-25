@@ -12,7 +12,13 @@ tokens:
   category: standard
 ---
 
-# OpenClaw & Hermes — Independent Systems (Both on Same iMac)
+# OpenClaw / SkillClaw & Hermes Integration Architecture
+
+## SkillClaw activation safety
+
+SkillClaw is an integration/proxy layer, not just a passive skill library. Before activating it for Hermes, back up the active Hermes config, verify the real `HERMES_HOME`/config path, start the proxy, run `skillclaw doctor hermes`, and test a real `/v1/chat/completions` call before leaving Hermes pointed at `skillclaw-model`. Do not assume an internal/OAuth Hermes provider (for example OpenAI Codex/ChatGPT backend auth) can be copied into SkillClaw; SkillClaw needs a standard OpenAI-compatible upstream with API-key auth such as OpenRouter or OpenAI API. If upstream auth fails, stop SkillClaw and restore the original Hermes model config immediately.
+
+Detailed runbook: `references/skillclaw-hermes-proxy.md`.
 
 ## Critical Architecture Finding (2026-04-29)
 
