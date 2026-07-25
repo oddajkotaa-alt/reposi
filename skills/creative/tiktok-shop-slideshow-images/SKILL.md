@@ -95,47 +95,16 @@ Add an explicit global consistency block to every prompt when the same subject/p
 
 ## Book / digital-product bundle slideshows
 
-Use the same slideshow discipline for book bundles and other non-pet products:
+Do **not** reuse any saved book-photo references or old book-cover mappings. The user reported this caused wrong book references.
 
-- Extract each title/cover from the user's reference photo and preserve recognizability; book titles may not be perfect, but covers should be close and not warped.
-- Avoid fake phone screenshot borders when regenerating; output clean 3:4 images.
-- If source images look bad, keep the same tips/copy but rebuild the visuals with better backgrounds and lighting.
-- For this user, **realistic** means *ordinary iPhone-quality photo*, not glossy AI/editorial: natural window light, normal exposure, realistic shadows, slight imperfections, simple props, no plastic lighting. If they say **iPhone 17 style**, keep sharp modern-phone detail and good natural light but still avoid cinematic/color-graded/editorial polish.
-- Avoid generated people/faces/hands unless the user explicitly requires them; object/product scenes with books, coffee, journals, pens, and real rooms usually look more believable. For lifestyle hook collages, prefer no-face/cropped details to avoid AI-looking people.
-- If the user asks to show a **whole girl/full-body hook**, use a natural iPhone-style lifestyle scene (cozy bedroom/desk corner, casual outfit, planner/coffee/gym bag) with realistic anatomy and no model-shoot polish; still keep books/products off slide 1 unless requested.
-- If the user provides an aspirational collage reference, use it only for direction; create a new version instead of copying the same scenes/layout directly.
-- For book-bundle slideshows, the user prefers **no books/products on the first hook slide**. Use an original 2×2 cut/collage of ordinary self-improvement lifestyle scenes or a natural whole-person lifestyle hook, then introduce books on later slides.
-- Vary backgrounds by theme: morning desk, finance desk, calm bedside, cafe/reading nook, self-care desk, final bundle flat-lay.
-- Keep the user's visual style: black serif headline + yellow brush highlight. Do not switch to unrelated premium editorial, collage/fantasy, or polished Pinterest imagery unless explicitly asked.
-- For final bundle slides, show all products at consistent physical size and include `Shop Here ↓` bottom-left if a CTA is needed; make `Shop Here ↓` noticeably larger than normal body/callout text.
-- If the user asks for a **new style/concept by yourself** but also says **use my style/visualisations**, invent new copy/story scenes while preserving their visual system: natural iPhone-like realism, black serif typography, yellow brush highlight, 3:4, and non-cinematic lighting.
-- If the user says a hook image looks **blurry**, **AI/editorial**, or asks to make it **normal**, immediately reduce the prompt’s fashion/editorial language. Prefer “casual iPhone photo in a real apartment/room, normal lighting, believable room details, realistic skin/shadows, candid pose” over “hyperrealistic commercial finish,” “cinematic editorial,” “luxury penthouse,” or “perfect model pose.”
-- For emotional/dark book carousels, do not automatically use every book reference provided. Select only the books that fit the theme when the user asks for a smaller/fitting set, and make the final CTA match that count (e.g. “all 5 books,” not the original 10-book bundle).
-- When the user says hook text should be “better,” simplify and restructure text into short stacked lines with a clear highlighted phrase. This tends to work better than long full sentences in image-generation text.
+For any book slideshow:
 
-### Google Flow / Nano Banana prompt packs
-
-When the user asks for **Flow test**, **Google Flow prompts**, or says they are using Flow/Nano Banana:
-
-- Do **not** generate images locally unless explicitly asked; produce copy-pasteable Flow prompts and a short setup guide.
-- Start with Flow settings: `Nano Banana Pro` (or best available image model), `3:4 portrait`, and which references to upload per slide.
-- If the user sends **slideshow example screenshots**, treat those as the style source; summarize the style before writing prompts.
-- For book slides, tell Flow to attach **style screenshots + the one matching book reference**. For the final bundle slide, attach **style screenshots + all needed book references**.
-- If the user says “only use books that fit,” select the thematic subset rather than forcing every provided book into the carousel.
-- Keep Flow prompts practical: example style, exact book-reference preservation, scene, baked text, and negatives. Avoid long JSON unless the user specifically wants JSON preserved.
-- For the user's current Flow book examples, the target style is often: realistic iPhone-style TikTok Shop book slideshow, book held close to camera or placed naturally, premium apartment/balcony/car/bedroom lifestyle backgrounds, blue-hour evening light mixed with warm lamp light, large elegant gold serif quote text, no text box/brushstroke/TikTok UI/watermark/collage.
-
-See `references/google-flow-book-carousel.md` for the Flow prompt workflow and the style-extraction pattern from this session.
-
-### Reference-heavy book prompt sets
-
-When the user provides many book references plus a numbered prompt set, preserve the mapping carefully:
-
-- Treat each prompt's described cover as the source of truth for which reference to attach. Do not assume the image order matches the prompt order when the prompt names/describes the cover.
-- For single-book slides, attach exactly that book reference as `image_url`; for a final bundle slide, attach all available book references (within provider limits) so the model can see every cover.
-- Keep the user's supplied baked text exactly when possible, but expect image models to distort text; verify quickly and mention any obvious issue if not regenerating.
-- For luxury-feminine / dark-rich-girl book sets, use dark marble, walnut, brass lamps, black silk, burgundy velvet, pearls, perfume, handbag, city-light bokeh, and warm ivory/champagne serif text. Avoid phone frames, screenshot UI, TikTok handles, black bars, collages, extra books, and redesigned covers.
-- If the user asks for “exact reference” covers, explicitly prompt: “do not recreate from written titles; use attached reference as sole source; do not redesign/recolor/replace cover.”
+- Use only book images provided in the **current task/session**.
+- If the current task does not include the needed book photos/covers, ask the user to resend them before generating.
+- Do not infer book covers from memory, old notes, previous sessions, or saved reference files.
+- Preserve exact current uploaded covers when the user provides them; avoid invented awards, reviews, author claims, or unsupported claims.
+- For Flow/Nano Banana prompts, attach only the current task's relevant book reference images, never saved/old book photos.
+- CTA text such as `Shop Here` should only be added/enlarged if the user explicitly asks for it in the prompt.
 
 ## Verification checklist
 
@@ -152,6 +121,4 @@ Before delivering:
 
 See `references/pet-cooling-mat-session.md` for concrete examples from the cat cooling mat workflows.
 See `references/user-style-and-consistency-notes.md` for the user's `my style` visual system, consistency pitfalls, product-info wording, and book-bundle workflow notes.
-See `references/book-bundle-iphone-realism.md` for the latest book-bundle prompt pattern: casual iPhone realism, natural light, no polished AI/editorial look.
-See `references/dark-feminine-book-bundle.md` for the 10-book dark feminine luxury prompt/reference-mapping pattern.
-See `references/dark-emotional-book-carousel.md` for the 5-book dark emotional carousel pattern, including thematic subset selection and hook-text cleanup.
+Do not use saved book-reference notes or old book-photo mappings; require current uploads for book covers/photos.

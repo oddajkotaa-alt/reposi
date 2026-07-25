@@ -2,4 +2,8 @@ User's VPS Google Flow setup uses noVNC/websockify on port 6080 connected to Tig
 §
 For VPS setup commands, explicitly state whether to run them inside the SSH/VPS Linux shell vs the user's local Windows Terminal; user may otherwise paste Linux-only paths locally.
 §
-User has an Obsidian vault at /opt/data/ObsidianVault; for TikTok Shop slideshow or faceless video tasks, check relevant vault notes such as TikTok Shop/Style Rules.md and Prompt Examples before drafting final prompts/copy.
+User has an Obsidian vault at /opt/data/ObsidianVault; for TikTok Shop slideshow/faceless video tasks, especially “recreate this slideshow/image” or reference-to-prompt work, check relevant vault notes first: TikTok Shop/Recreate Slideshow Workflow.md, TikTok Shop/Style Rules.md, and Prompt Examples.
+§
+For TikTok Shop slideshow recreation: after creating prompts from reference images using the Obsidian workflow, the user wants Hermes to use Google Flow/Nano Banana Pro to generate the images when requested, not stop at prompt drafting.
+§
+For book slideshows, do not reuse saved/old book photo references or cover mappings. Require the user to upload current book cover/reference images for that task, then use only those current uploads.
