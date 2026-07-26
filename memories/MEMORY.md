@@ -9,3 +9,5 @@ For TikTok Shop slideshow recreation: after creating prompts from reference imag
 For book slideshows, do not reuse saved/old book photo references or cover mappings. Require the user to upload current book cover/reference images for that task, then use only those current uploads.
 §
 User's VPS currently has ~4 vCPU AMD EPYC, 7.8GB RAM, no NVIDIA GPU/no nvidia-smi, ~122GB free disk; suitable only for small CPU text models (e.g., Qwen/Phi/Gemma ~1.5B–4B GGUF), not local image/video generation.
+§
+User wants to build a fresh Obsidian + LLM Wiki “second brain” for Hermes long-term knowledge, connected between PC Obsidian and VPS Hermes via free Syncthing; avoid adding extra memory tools like Honcho unless a clear need appears.
