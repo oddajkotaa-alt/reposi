@@ -106,6 +106,17 @@ For any book slideshow:
 - For Flow/Nano Banana prompts, attach only the current task's relevant book reference images, never saved/old book photos.
 - CTA text such as `Shop Here` should only be added/enlarged if the user explicitly asks for it in the prompt.
 
+### Saving replacement book references
+
+When the user sends a new replacement set of book photos, especially through Telegram, actively save the actual image files into a stable current-reference folder and verify the count before confirming. Preferred convention:
+
+```text
+/opt/data/book_references/current/
+  manifest.json
+```
+
+The manifest should list each original attachment path, saved path, label/title if known, and hash. Do not confuse deleting old reference notes/mappings with deleting actual image files. If a prior Telegram-side assistant claimed to save images but the stable folder is missing in the current session, re-copy from the Telegram attachment cache before answering. See `references/current-book-reference-handling.md` for the detailed workflow and pitfalls.
+
 ## Verification checklist
 
 Before delivering:
