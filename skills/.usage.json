@@ -563,13 +563,13 @@
     "created_at": "2026-07-12T18:58:04.084401+00:00",
     "created_by": null,
     "last_patched_at": null,
-    "last_used_at": null,
-    "last_viewed_at": null,
+    "last_used_at": "2026-07-26T16:07:19.934696+00:00",
+    "last_viewed_at": "2026-07-26T16:07:19.929203+00:00",
     "patch_count": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 0,
-    "view_count": 0
+    "use_count": 1,
+    "view_count": 1
   },
   "llm-wiki": {
     "archived_at": null,
@@ -654,13 +654,13 @@
     "created_at": "2026-07-12T18:58:04.182293+00:00",
     "created_by": null,
     "last_patched_at": null,
-    "last_used_at": "2026-07-26T00:47:42.642644+00:00",
-    "last_viewed_at": "2026-07-26T00:47:42.628698+00:00",
+    "last_used_at": "2026-07-26T16:22:50.322969+00:00",
+    "last_viewed_at": "2026-07-26T16:22:50.317862+00:00",
     "patch_count": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 2,
-    "view_count": 2
+    "use_count": 3,
+    "view_count": 3
   },
   "ocr-and-documents": {
     "archived_at": null,
@@ -1135,13 +1135,13 @@
     "created_at": "2026-07-12T18:58:04.472946+00:00",
     "created_by": null,
     "last_patched_at": null,
-    "last_used_at": "2026-07-25T16:25:01.620297+00:00",
-    "last_viewed_at": "2026-07-25T16:25:01.605094+00:00",
+    "last_used_at": "2026-07-26T16:56:51.968595+00:00",
+    "last_viewed_at": "2026-07-26T16:56:51.961892+00:00",
     "patch_count": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 1,
-    "view_count": 1
+    "use_count": 2,
+    "view_count": 2
   },
   "yuanbao": {
     "archived_at": null,

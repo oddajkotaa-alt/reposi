@@ -7,3 +7,5 @@ User has an Obsidian vault at /opt/data/ObsidianVault; for TikTok Shop slideshow
 For TikTok Shop slideshow recreation: after creating prompts from reference images using the Obsidian workflow, the user wants Hermes to use Google Flow/Nano Banana Pro to generate the images when requested, not stop at prompt drafting.
 §
 For book slideshows, do not reuse saved/old book photo references or cover mappings. Require the user to upload current book cover/reference images for that task, then use only those current uploads.
+§
+User's VPS currently has ~4 vCPU AMD EPYC, 7.8GB RAM, no NVIDIA GPU/no nvidia-smi, ~122GB free disk; suitable only for small CPU text models (e.g., Qwen/Phi/Gemma ~1.5B–4B GGUF), not local image/video generation.
