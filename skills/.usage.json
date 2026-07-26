@@ -1,4 +1,17 @@
 {
+  "agent-capability-comparison-methodology": {
+    "archived_at": null,
+    "created_at": "2026-07-26T13:25:40.032013+00:00",
+    "created_by": null,
+    "last_patched_at": null,
+    "last_used_at": "2026-07-26T13:25:40.048103+00:00",
+    "last_viewed_at": "2026-07-26T13:25:40.032066+00:00",
+    "patch_count": 0,
+    "pinned": false,
+    "state": "active",
+    "use_count": 1,
+    "view_count": 1
+  },
   "agent-skill-proxy-integration": {
     "archived_at": null,
     "created_at": "2026-07-25T15:30:24.085838+00:00",
@@ -667,13 +680,13 @@
     "created_at": "2026-07-25T14:22:48.983048+00:00",
     "created_by": null,
     "last_patched_at": "2026-07-25T14:23:16.803886+00:00",
-    "last_used_at": "2026-07-25T14:22:48.990319+00:00",
-    "last_viewed_at": "2026-07-25T14:22:48.983147+00:00",
+    "last_used_at": "2026-07-26T13:25:40.040701+00:00",
+    "last_viewed_at": "2026-07-26T13:25:40.021912+00:00",
     "patch_count": 2,
     "pinned": false,
     "state": "active",
-    "use_count": 1,
-    "view_count": 1
+    "use_count": 2,
+    "view_count": 2
   },
   "openclaw-hermes-arch": {
     "archived_at": null,
