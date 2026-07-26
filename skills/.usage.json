@@ -589,13 +589,13 @@
     "created_at": "2026-07-12T18:58:04.091578+00:00",
     "created_by": null,
     "last_patched_at": null,
-    "last_used_at": null,
-    "last_viewed_at": null,
+    "last_used_at": "2026-07-26T18:43:48.827520+00:00",
+    "last_viewed_at": "2026-07-26T18:43:48.815553+00:00",
     "patch_count": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 0,
-    "view_count": 0
+    "use_count": 1,
+    "view_count": 1
   },
   "manim-video": {
     "archived_at": null,
@@ -667,13 +667,13 @@
     "created_at": "2026-07-12T18:58:04.182293+00:00",
     "created_by": null,
     "last_patched_at": null,
-    "last_used_at": "2026-07-26T16:22:50.322969+00:00",
-    "last_viewed_at": "2026-07-26T16:22:50.317862+00:00",
+    "last_used_at": "2026-07-26T18:43:48.837442+00:00",
+    "last_viewed_at": "2026-07-26T18:43:48.806339+00:00",
     "patch_count": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 3,
-    "view_count": 3
+    "use_count": 4,
+    "view_count": 4
   },
   "ocr-and-documents": {
     "archived_at": null,
