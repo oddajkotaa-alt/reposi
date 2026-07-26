@@ -52,7 +52,50 @@ If the user accidentally names a device something odd like `Actions → Show ID`
 
 ## If devices show disconnected or folder invite does not appear
 
-Use the safe reset pattern from `references/pc-vps-syncthing-setup.md`.
+## Docker/container path mismatch pitfall
+
+If PC/VPS Syncthing says the folder is “Up to Date” but Hermes sees different Obsidian notes than the VPS SSH shell sees at the same visible path (for example `/opt/data/ObsidianVault`), suspect Hermes is running in Docker/container with `/opt/data` mounted from a Docker volume.
+
+Diagnostic sequence from the **VPS SSH shell**:
+
+```bash
+docker ps
+docker inspect hermes-agent | grep -A 20 '"Mounts"'
+ls -la /var/lib/docker/volumes/<volume-id>/_data/ObsidianVault
+```
+
+Then update the **VPS Syncthing** folder path to the host-side Docker volume path, not the container-internal `/opt/data/...` path. For beginner users, if the full Docker volume ID is too long and pastes across lines, use short commands, shell variables, or a verified glob check such as:
+
+```bash
+ls -la /var/lib/docker/volumes/b7c395*/_data/ObsidianVault
+```
+
+Before removing/re-adding Syncthing folders or changing paths, create a backup of the real vault, again avoiding long copied paths when possible:
+
+```bash
+mkdir -p /root/hermes-backups
+tar -czf /root/hermes-backups/obsidian-vault-before-syncthing-reset.tar.gz -C /var/lib/docker/volumes/b7c395*/_data ObsidianVault
+ls -lh /root/hermes-backups/obsidian-vault-before-syncthing-reset.tar.gz
+```
+
+If the Syncthing UI makes editing the long Docker path awkward, prefer a short bind mount over a symlink:
+
+```bash
+mkdir -p /mnt/hermes-obsidian-vault
+mount --bind /var/lib/docker/volumes/<verified-volume>/_data/ObsidianVault /mnt/hermes-obsidian-vault
+ls -la /mnt/hermes-obsidian-vault
+```
+
+Then remove the wrong folder from **VPS Syncthing** configuration only (do not choose any “delete files from disk” option) and add it again with `Folder Path` set to `/mnt/hermes-obsidian-vault`.
+
+Explicitly explain when relevant that host-side Flow/noVNC/Chrome and Dockerized Hermes can coexist: Flow may be installed on the VPS host because browser automation needs host GUI access, while the active Hermes chat can still run inside the `hermes-agent` container.
+
+## Session troubleshooting references
+
+- `references/pc-vps-syncthing-setup.md` covers the safe reset pattern when devices are disconnected or folder invites do not appear.
+- `references/syncthing-troubleshooting.md` covers SSH tunnel address confusion, the Syncthing lock/encryption field, encrypted-folder consistency errors, and the “Up to Date but Obsidian is empty” diagnostic path.
+- `references/docker-volume-path-mismatch.md` covers the detailed diagnostic path when Hermes-in-Docker and host Syncthing see different `/opt/data/ObsidianVault` contents.
+- `references/docker-hermes-host-syncthing.md` covers the cleaner backup + bind-mount reset pattern when host Syncthing must sync a Dockerized Hermes vault and the user cannot reliably paste long paths.
 
 Important: removing a remote device from Syncthing removes the pairing only; it does not delete Obsidian files. Still reassure the user before removal.
 
