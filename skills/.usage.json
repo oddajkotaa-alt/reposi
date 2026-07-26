@@ -779,6 +779,19 @@
     "use_count": 0,
     "view_count": 0
   },
+  "pc-vps-obsidian-sync": {
+    "archived_at": null,
+    "created_at": "2026-07-26T20:35:02.365194+00:00",
+    "created_by": "agent",
+    "last_patched_at": "2026-07-26T20:35:20.831538+00:00",
+    "last_used_at": null,
+    "last_viewed_at": null,
+    "patch_count": 1,
+    "pinned": false,
+    "state": "active",
+    "use_count": 0,
+    "view_count": 0
+  },
   "petdex": {
     "archived_at": null,
     "created_at": "2026-07-12T18:58:04.261390+00:00",

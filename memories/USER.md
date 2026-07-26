@@ -8,4 +8,4 @@ Image refs: preserve appearance/scale/anatomy, avoid oversized products/unprovid
 §
 Google Flow: Agent generation, Nano Banana Pro, 3:4, VPS/noVNC; wants Telegram automation where Hermes operates Flow/returns results; prefer browser-harness/browser tools first and computer_use for real Flow/noVNC UI.
 §
-User runs Hermes on a VPS while using PC/browser separately; beginner with VPS/Linux, needs terminal/browser clarity, struggles copying/pasting, and expects Hermes to use available YouTube/transcript tools for video links when possible.
+User runs Hermes on a VPS while using PC/browser separately; beginner with VPS/Linux, needs clear PC-vs-VPS steps, struggles copying/pasting, prefers Polish when setup gets confusing, and expects YouTube/transcript tools tried for video links.
