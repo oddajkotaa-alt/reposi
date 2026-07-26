@@ -14,4 +14,4 @@ User wants to build a fresh Obsidian + LLM Wiki “second brain” for Hermes lo
 §
 For this Hermes VPS Docker setup, the active TUI runs in container `hermes-agent`; its `/opt/data` is Docker volume `/var/lib/docker/volumes/b7c39575561de34eacce033f8462d5068ebb13f5a2ce0b53b301e357f1a4687d/_data`, so host `/opt/data/ObsidianVault` is a different folder unless symlinked.
 §
-User has difficulty copying long VPS paths/commands because paste can add spaces or wrap lines; prefer short commands, wildcards, symlinks, and one-line copy-paste snippets.
+User has difficulty copying long VPS paths/commands and may accidentally press Ctrl+C in terminal; prefer short one-line pasteable commands, globs/symlinks, and when recovering after interruption, paste the exact last instructions/context rather than a generic summary.

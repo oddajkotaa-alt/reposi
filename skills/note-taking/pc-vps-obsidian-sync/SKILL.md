@@ -99,6 +99,48 @@ Explicitly explain when relevant that host-side Flow/noVNC/Chrome and Dockerized
 
 Important: removing a remote device from Syncthing removes the pairing only; it does not delete Obsidian files. Still reassure the user before removal.
 
+## Post-restart and status troubleshooting
+
+After a VPS reboot, verify host Syncthing from the **VPS SSH shell**, not from inside a Dockerized Hermes terminal:
+
+```bash
+systemctl status syncthing@root --no-pager
+```
+
+If it shows `Active: inactive (dead)` and `disabled`, fix with:
+
+```bash
+systemctl enable syncthing@root
+systemctl start syncthing@root
+systemctl status syncthing@root --no-pager
+```
+
+Then verify the GUI is really listening locally on the VPS:
+
+```bash
+curl -I http://127.0.0.1:8384
+```
+
+`HTTP/1.1 200 OK` or `HTTP/1.1 302 Found` means the VPS-side Syncthing web UI is up; remaining failures are usually Windows SSH tunnel/browser routing issues. If `8385` is stale or already bound on Windows, use an alternate local tunnel port:
+
+```bash
+ssh -L 8390:127.0.0.1:8384 root@VPS_IP
+```
+
+and open `http://127.0.0.1:8390` on the Windows PC.
+
+Syncthing UI may not literally show “Up to Date” in Polish/detail views. Treat the folder as synced when `Stan globalny` and `Stan lokalny` have the same file/folder/size counts, e.g. `14 6 ~30.5 KiB` on both, and the folder is shared with the PC.
+
+For file verification, remind the user that Markdown notes are files, not folders: folders may appear blue while `.md` notes appear gray/white in terminals/file managers. If `cat "/mnt/.../PC Sync Test.md"` says no such file but the user sees the note elsewhere, locate the exact path/name first:
+
+```bash
+find /mnt/hermes-obsidian-vault -type f
+```
+
+Then quote the exact full path returned by `find` in `cat`.
+
+See also `references/vps-syncthing-restart-and-ui-status.md` for a session-derived condensed troubleshooting transcript.
+
 ## Troubleshooting style
 
 When the user is confused, do not repeat a long full setup. Switch to one or two steps at a time. If the user asks in Polish or says Polish is easier, continue in concise Polish.
