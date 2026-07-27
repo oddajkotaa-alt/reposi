@@ -231,22 +231,6 @@
     "last_injected_at": "2026-07-25T23:56:25",
     "effectiveness": 0.5
   },
-  "tiktok-shop-slideshow-images": {
-    "inject_count": 48,
-    "positive_count": 0,
-    "negative_count": 0,
-    "neutral_count": 0,
-    "last_injected_at": "2026-07-25T23:56:25",
-    "effectiveness": 0.5
-  },
-  "tiktok-shop-slideshows": {
-    "inject_count": 48,
-    "positive_count": 0,
-    "negative_count": 0,
-    "neutral_count": 0,
-    "last_injected_at": "2026-07-25T23:56:25",
-    "effectiveness": 0.5
-  },
   "touchdesigner-mcp": {
     "inject_count": 48,
     "positive_count": 0,
@@ -671,14 +655,6 @@
     "last_injected_at": "2026-07-25T23:56:25",
     "effectiveness": 0.5
   },
-  "tiktok-shop-content-automation": {
-    "inject_count": 48,
-    "positive_count": 0,
-    "negative_count": 0,
-    "neutral_count": 0,
-    "last_injected_at": "2026-07-25T23:56:25",
-    "effectiveness": 0.5
-  },
   "xurl": {
     "inject_count": 48,
     "positive_count": 0,
@@ -801,22 +777,6 @@
   },
   "hermes-proxy-integrations": {
     "inject_count": 45,
-    "positive_count": 0,
-    "negative_count": 0,
-    "neutral_count": 0,
-    "last_injected_at": "2026-07-25T23:56:25",
-    "effectiveness": 0.5
-  },
-  "google-flow-automation": {
-    "inject_count": 40,
-    "positive_count": 0,
-    "negative_count": 0,
-    "neutral_count": 0,
-    "last_injected_at": "2026-07-25T23:56:25",
-    "effectiveness": 0.5
-  },
-  "tiktok-shop-slideshow-workflows": {
-    "inject_count": 40,
     "positive_count": 0,
     "negative_count": 0,
     "neutral_count": 0,

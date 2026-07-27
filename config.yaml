@@ -125,6 +125,13 @@ moa:
   enabled: true
 skills:
   creation_nudge_interval: 15
+  disabled:
+    - google-flow-automation
+    - tiktok-shop-content-automation
+    - tiktok-shop-slideshow-images
+    - tiktok-shop-slideshow-workflows
+    - tiktok-shop-slideshows
+    - vps-google-flow-automation
 code_execution:
   timeout: 300
   max_tool_calls: 50
