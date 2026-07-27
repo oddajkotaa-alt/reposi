@@ -6,6 +6,6 @@ TikTok Shop defaults: 3:4, strong hook/no product unless requested, problem→so
 §
 Image refs: preserve appearance/scale/anatomy, avoid oversized products/unprovided claims, vary backgrounds. CTA “Shop Here” only if asked. “My style” = casual iPhone realism for photo outputs only. For 2x2 grids, keep text nearer center/middle so all images stay visible.
 §
-Google Flow: Agent generation, Nano Banana Pro, 3:4, VPS/noVNC; wants Telegram automation where Hermes operates Flow/returns results; prefer browser-harness/browser tools first and computer_use for real Flow/noVNC UI.
+Google Flow: Agent generation, Nano Banana Pro, 3:4, VPS/noVNC; operate real logged-in Flow profile, confirm process/profile when asked, never silently fall back to non-Flow image generation.
 §
-User uses PC/browser + VPS Hermes; beginner with VPS/Linux. Needs clear PC-vs-VPS labels, Polish when confused, and very short pasteable commands/paths because noVNC/browser clipboard corrupts long text/spaces. Expects YouTube transcript tools tried for video links.
+User uses PC/browser + VPS Hermes; beginner with VPS/Linux. Needs clear PC-vs-VPS labels, Polish when confused, and very short pasteable commands with full explicit paths; noVNC/browser clipboard corrupts/truncates text and user may paste ellipsized paths like `/home/...rity`. Expects YouTube transcript tools tried for video links.

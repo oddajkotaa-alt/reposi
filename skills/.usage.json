@@ -277,13 +277,13 @@
     "created_at": "2026-07-06T11:20:10.664901+00:00",
     "created_by": null,
     "last_patched_at": null,
-    "last_used_at": "2026-07-27T12:39:15.498856+00:00",
-    "last_viewed_at": "2026-07-27T12:39:15.436028+00:00",
+    "last_used_at": "2026-07-27T13:38:36.496715+00:00",
+    "last_viewed_at": "2026-07-27T13:38:36.478321+00:00",
     "patch_count": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 9,
-    "view_count": 9
+    "use_count": 11,
+    "view_count": 11
   },
   "containerized-desktop-automation": {
     "archived_at": null,
@@ -445,14 +445,14 @@
     "archived_at": null,
     "created_at": "2026-07-25T16:54:23.127225+00:00",
     "created_by": "agent",
-    "last_patched_at": "2026-07-25T16:54:36.420469+00:00",
-    "last_used_at": "2026-07-27T12:39:15.479045+00:00",
-    "last_viewed_at": "2026-07-27T12:39:15.458507+00:00",
-    "patch_count": 1,
+    "last_patched_at": "2026-07-27T13:28:00.055775+00:00",
+    "last_used_at": "2026-07-27T13:26:53.542817+00:00",
+    "last_viewed_at": "2026-07-27T13:26:53.529386+00:00",
+    "patch_count": 11,
     "pinned": false,
     "state": "active",
-    "use_count": 2,
-    "view_count": 2
+    "use_count": 6,
+    "view_count": 6
   },
   "google-workspace": {
     "archived_at": null,
@@ -1134,14 +1134,14 @@
     "archived_at": null,
     "created_at": "2026-07-07T09:45:52.742428+00:00",
     "created_by": "agent",
-    "last_patched_at": "2026-07-27T12:20:21.697010+00:00",
-    "last_used_at": "2026-07-27T12:20:08.853923+00:00",
-    "last_viewed_at": "2026-07-27T12:20:08.839758+00:00",
-    "patch_count": 34,
+    "last_patched_at": "2026-07-27T13:28:06.319783+00:00",
+    "last_used_at": "2026-07-27T13:26:37.108016+00:00",
+    "last_viewed_at": "2026-07-27T13:26:37.095253+00:00",
+    "patch_count": 36,
     "pinned": false,
     "state": "active",
-    "use_count": 22,
-    "view_count": 22
+    "use_count": 23,
+    "view_count": 23
   },
   "tiktok-shop-slideshow-workflows": {
     "archived_at": null,
@@ -1199,14 +1199,14 @@
     "archived_at": null,
     "created_at": "2026-07-20T21:24:45.477961+00:00",
     "created_by": "agent",
-    "last_patched_at": "2026-07-22T16:03:58.550112+00:00",
-    "last_used_at": "2026-07-26T21:34:43.964211+00:00",
-    "last_viewed_at": "2026-07-26T21:34:43.956640+00:00",
-    "patch_count": 19,
+    "last_patched_at": "2026-07-27T13:20:38.047330+00:00",
+    "last_used_at": "2026-07-27T13:19:49.825981+00:00",
+    "last_viewed_at": "2026-07-27T13:19:49.807032+00:00",
+    "patch_count": 22,
     "pinned": false,
     "state": "active",
-    "use_count": 13,
-    "view_count": 13
+    "use_count": 16,
+    "view_count": 16
   },
   "weights-and-biases": {
     "archived_at": null,

@@ -95,14 +95,14 @@ Add an explicit global consistency block to every prompt when the same subject/p
 
 ## Book / digital-product bundle slideshows
 
-Do **not** reuse any saved book-photo references or old book-cover mappings. The user reported this caused wrong book references.
+Do **not** reuse old/unapproved book-photo references or old book-cover mappings. The user reported this caused wrong book references.
 
-For any book slideshow:
+For any book slideshow, use exactly one approved source:
 
-- Use only book images provided in the **current task/session**.
-- If the current task does not include the needed book photos/covers, ask the user to resend them before generating.
-- Do not infer book covers from memory, old notes, previous sessions, or saved reference files.
-- Preserve exact current uploaded covers when the user provides them; avoid invented awards, reviews, author claims, or unsupported claims.
+- **Approved reusable set:** if `/opt/data/product_references/books-current-10/manifest.json` exists and says `approved: true`, use that exact 10-book set for these specific books. For a 10-book generation use all 10; for a 5-book generation select/request 5 from this approved set.
+- **New current upload:** if the user sends new/replacement book photos, save the actual image files, verify the count and manifest, then make that the approved source before generating.
+- Do not infer book covers from memory, old notes, previous sessions, or unapproved saved reference files.
+- Preserve exact approved/current covers; avoid invented awards, reviews, author claims, or unsupported claims.
 - Do not make every slide use the same background. If the references/current outputs lean into one repetitive look such as Rome/classical stone, keep a related premium/lifestyle feel but create varied backgrounds across the set.
 - For Flow/Nano Banana prompts, attach only the current task's relevant book reference images, never saved/old book photos.
 - If a generated image has a good scene/text but the wrong book cover, download/save it anyway and run a follow-up image edit using the generated image plus the correct book reference: replace the book with the reference book while preserving the scene, typography, lighting, and composition.
@@ -144,4 +144,4 @@ Before delivering:
 See `references/pet-cooling-mat-session.md` for concrete examples from the cat cooling mat workflows.
 See `references/user-style-and-consistency-notes.md` for the user's `my style` visual system, consistency pitfalls, product-info wording, and book-bundle workflow notes.
 See `references/book-reference-quarantine.md` for the host-side old/wrong book-reference folder quarantine pattern, including `/home/flowdesk` folders that may not be visible from the Hermes container.
-Do not use saved book-reference notes or old book-photo mappings; require current uploads for book covers/photos.
+Do not use old book-reference notes or old book-photo mappings; use an approved current product set (for example `books-current-10`) or save/verify a new current upload before generating.
