@@ -16,14 +16,14 @@
     "archived_at": null,
     "created_at": "2026-07-26T19:44:51.686715+00:00",
     "created_by": "agent",
-    "last_patched_at": "2026-07-27T10:07:28.815839+00:00",
-    "last_used_at": "2026-07-27T10:18:58.307416+00:00",
-    "last_viewed_at": "2026-07-27T10:18:58.301380+00:00",
-    "patch_count": 4,
+    "last_patched_at": "2026-07-27T11:33:36.411855+00:00",
+    "last_used_at": "2026-07-27T11:33:15.114751+00:00",
+    "last_viewed_at": "2026-07-27T11:33:15.108671+00:00",
+    "patch_count": 8,
     "pinned": false,
     "state": "active",
-    "use_count": 4,
-    "view_count": 4
+    "use_count": 8,
+    "view_count": 8
   },
   "agent-reach": {
     "archived_at": null,
@@ -381,13 +381,13 @@
     "created_at": "2026-07-12T18:58:03.900167+00:00",
     "created_by": null,
     "last_patched_at": null,
-    "last_used_at": null,
-    "last_viewed_at": null,
+    "last_used_at": "2026-07-27T11:17:10.286253+00:00",
+    "last_viewed_at": "2026-07-27T11:17:10.278643+00:00",
     "patch_count": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 0,
-    "view_count": 0
+    "use_count": 1,
+    "view_count": 1
   },
   "github-code-review": {
     "archived_at": null,
@@ -420,26 +420,26 @@
     "created_at": "2026-07-12T18:58:03.972039+00:00",
     "created_by": null,
     "last_patched_at": null,
-    "last_used_at": null,
-    "last_viewed_at": null,
+    "last_used_at": "2026-07-27T11:37:53.285810+00:00",
+    "last_viewed_at": "2026-07-27T11:37:53.273690+00:00",
     "patch_count": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 0,
-    "view_count": 0
+    "use_count": 1,
+    "view_count": 1
   },
   "github-repo-management": {
     "archived_at": null,
     "created_at": "2026-07-12T18:58:03.986553+00:00",
     "created_by": null,
     "last_patched_at": null,
-    "last_used_at": null,
-    "last_viewed_at": null,
+    "last_used_at": "2026-07-27T11:17:09.109012+00:00",
+    "last_viewed_at": "2026-07-27T11:17:09.097326+00:00",
     "patch_count": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 0,
-    "view_count": 0
+    "use_count": 2,
+    "view_count": 2
   },
   "google-flow-automation": {
     "archived_at": null,
@@ -537,13 +537,13 @@
     "created_at": "2026-07-26T21:05:14.254626+00:00",
     "created_by": "agent",
     "last_patched_at": "2026-07-26T21:05:26.346804+00:00",
-    "last_used_at": "2026-07-26T23:04:31.843655+00:00",
-    "last_viewed_at": "2026-07-26T23:04:31.838447+00:00",
+    "last_used_at": "2026-07-27T11:33:40.627317+00:00",
+    "last_viewed_at": "2026-07-27T11:33:40.620158+00:00",
     "patch_count": 1,
     "pinned": false,
     "state": "active",
-    "use_count": 3,
-    "view_count": 3
+    "use_count": 4,
+    "view_count": 4
   },
   "himalaya": {
     "archived_at": null,
@@ -631,6 +631,19 @@
     "last_used_at": "2026-07-26T18:43:48.827520+00:00",
     "last_viewed_at": "2026-07-26T18:43:48.815553+00:00",
     "patch_count": 0,
+    "pinned": false,
+    "state": "active",
+    "use_count": 1,
+    "view_count": 1
+  },
+  "llm-wiki-vault-maintenance": {
+    "archived_at": null,
+    "created_at": "2026-07-27T11:33:46.893715+00:00",
+    "created_by": null,
+    "last_patched_at": "2026-07-27T11:34:19.006220+00:00",
+    "last_used_at": "2026-07-27T11:33:46.899991+00:00",
+    "last_viewed_at": "2026-07-27T11:33:46.893756+00:00",
+    "patch_count": 3,
     "pinned": false,
     "state": "active",
     "use_count": 1,

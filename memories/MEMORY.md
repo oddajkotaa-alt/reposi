@@ -10,7 +10,7 @@ For book slideshows, do not reuse saved/old book photo references or cover mappi
 §
 User's VPS currently has ~4 vCPU AMD EPYC, 7.8GB RAM, no NVIDIA GPU/no nvidia-smi, ~122GB free disk; suitable only for small CPU text models (e.g., Qwen/Phi/Gemma ~1.5B–4B GGUF), not local image/video generation.
 §
-User wants to build a fresh Obsidian + LLM Wiki “second brain” for Hermes long-term knowledge, connected between PC Obsidian and VPS Hermes via free Syncthing; avoid adding extra memory tools like Honcho unless a clear need appears.
+User wants an Obsidian + LLM Wiki second brain synced PC↔VPS via Syncthing; prefers video-style automation: auto-save clearly useful chat knowledge, ingest raw folder, lint/backup; avoid Honcho unless needed.
 §
 Hermes VPS Obsidian sync currently works but user treats settings as editable/not final. Active TUI/container can read synced vault at `/opt/data/ObsidianVault`; host/VPS Syncthing path is `/mnt/hermes-obsidian-vault`; Windows vault path is `C:\Users\Admin\Documents\ObsidianVault`.
 §

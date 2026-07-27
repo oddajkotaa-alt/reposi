@@ -1,0 +1,167 @@
+{
+  "jobs": [
+    {
+      "id": "cfab5d069fd7",
+      "name": "LLM Wiki daily raw ingest",
+      "prompt": "You are maintaining the user's Obsidian LLM Wiki in the style of the LLM Wiki video: raw sources are automatically processed into linked wiki pages.\n\nVault path: /opt/data/ObsidianVault\nLLM Wiki path: /opt/data/ObsidianVault/LLM Wiki\nRaw path: /opt/data/ObsidianVault/LLM Wiki/raw\nSchema: /opt/data/ObsidianVault/LLM Wiki/SCHEMA.md\nIndex: /opt/data/ObsidianVault/LLM Wiki/index.md\nLog: /opt/data/ObsidianVault/LLM Wiki/log.md\n\nTask: daily automatic ingest.\n\nRules:\n- Do NOT save secrets, API keys, passwords, cookies, tokens, payment info, or private credentials. If a raw source contains secrets, do not ingest the secret values; mention redaction in log.\n- Keep raw sources unchanged. They are source of truth.\n- Automatically create/update linked wiki pages from new raw sources.\n- Do not ask the user questions; this is an autonomous cron run.\n- In this TUI profile, final output is saved locally in cron history, not delivered live.\n\nSteps:\n1. Read SCHEMA.md, index.md, and log.md.\n2. Search Raw path recursively for non-README .md/.txt files.\n3. Determine which raw files have not been processed yet by checking log.md for file paths/names.\n4. If no unprocessed raw files exist, output 'No new raw sources to ingest' and make no changes.\n5. For each unprocessed raw source:\n   a. Read it.\n   b. Extract durable reusable facts, patterns, decisions, entities, concepts, comparisons, and potential reusable query answers.\n   c. Create or update appropriate markdown pages under:\n      - /opt/data/ObsidianVault/LLM Wiki/entities/\n      - /opt/data/ObsidianVault/LLM Wiki/concepts/\n      - /opt/data/ObsidianVault/LLM Wiki/comparisons/\n      - /opt/data/ObsidianVault/LLM Wiki/queries/\n   d. Add Obsidian wikilinks between related pages.\n   e. Update index.md with links to newly created important pages.\n   f. Append a log.md entry with date, processed raw file path, created/updated pages, and any redactions/uncertainties.\n6. Final response: summarize raw files processed and pages created/updated.\n\nImportant: This job should perform real ingest, not only draft to Inbox, unless safety/privacy concerns require redaction.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": "openai-codex",
+      "model_snapshot": "gpt-5.5",
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 2 * * *",
+        "display": "0 2 * * *"
+      },
+      "schedule_display": "0 2 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-07-27T11:05:46.452882+00:00",
+      "next_run_at": "2026-07-28T02:00:00+00:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": null,
+      "enabled_toolsets": [
+        "file"
+      ],
+      "workdir": null
+    },
+    {
+      "id": "a0b6f721454d",
+      "name": "LLM Wiki weekly lint report",
+      "prompt": "You are maintaining the user's Obsidian LLM Wiki.\n\nVault path: /opt/data/ObsidianVault\nLLM Wiki path: /opt/data/ObsidianVault/LLM Wiki\nInbox review note: /opt/data/ObsidianVault/Inbox/Review Before Saving.md\nLog: /opt/data/ObsidianVault/LLM Wiki/log.md\nSchema: /opt/data/ObsidianVault/LLM Wiki/SCHEMA.md\nIndex: /opt/data/ObsidianVault/LLM Wiki/index.md\n\nTask: weekly safe lint report.\n\nRules:\n- Do NOT make large rewrites automatically.\n- Do NOT delete files automatically.\n- Do NOT save secrets, API keys, passwords, cookies, tokens, or payment info.\n- If changes are needed, draft proposed fixes in Inbox/Review Before Saving.md.\n- Do NOT ask the user questions; this is an autonomous cron run.\n- In this TUI profile, final output is saved locally in cron history, not delivered live.\n\nSteps:\n1. Read SCHEMA.md and index.md.\n2. List markdown files under LLM Wiki.\n3. Check for obvious issues:\n   - missing required files: SCHEMA.md, index.md, log.md\n   - empty important pages\n   - README-only folders with no useful pages yet\n   - wiki links pointing to likely missing notes\n   - pages not linked from index.md or another page when they should be discoverable\n   - duplicated/similar note names\n4. Do not treat raw/README files as problems.\n5. Append a section to Inbox/Review Before Saving.md titled 'LLM Wiki lint report - YYYY-MM-DD' with findings and proposed fixes.\n6. Append a short log entry noting lint report created.\n7. Final response: summarize findings and files updated.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": "openai-codex",
+      "model_snapshot": "gpt-5.5",
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 3 * * 1",
+        "display": "0 3 * * 1"
+      },
+      "schedule_display": "0 3 * * 1",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-07-27T11:06:01.691179+00:00",
+      "next_run_at": "2026-08-03T03:00:00+00:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": null,
+      "enabled_toolsets": [
+        "file"
+      ],
+      "workdir": null
+    },
+    {
+      "id": "ea1f4221369d",
+      "name": "LLM Wiki daily chat auto-save",
+      "prompt": "You are maintaining the user's Obsidian LLM Wiki and Obsidian vault. The user wants useful information from Hermes conversations to be saved automatically when it is clearly worth keeping, so they do not have to remember to say 'save this'.\n\nVault path: /opt/data/ObsidianVault\nLLM Wiki path: /opt/data/ObsidianVault/LLM Wiki\nSchema: /opt/data/ObsidianVault/LLM Wiki/SCHEMA.md\nIndex: /opt/data/ObsidianVault/LLM Wiki/index.md\nLog: /opt/data/ObsidianVault/LLM Wiki/log.md\nInbox review note: /opt/data/ObsidianVault/Inbox/Review Before Saving.md\n\nTask: daily auto-save useful conversation knowledge.\n\nRules:\n- Use session_search to inspect recent Hermes conversations since the last run when possible.\n- Save only clearly durable, useful knowledge: reusable workflows, verified setup facts, user-approved corrections, prompt patterns, troubleshooting procedures, decisions that will matter later, and stable project conventions.\n- Do NOT save raw chat dumps.\n- Do NOT save secrets, passwords, API keys, tokens, cookies, payment info, private credentials, or sensitive personal details.\n- Do NOT save temporary task progress, one-off commands, stale paths unless they are setup facts, or completed-work logs that will be irrelevant soon.\n- If something is clearly useful and safe, save it directly into the appropriate Obsidian/LLM Wiki note.\n- If useful but uncertain/sensitive/ambiguous, append a short proposed note to Inbox/Review Before Saving.md.\n- Keep entries concise and linked.\n- Do not ask the user questions; this is an autonomous cron run.\n- In this TUI profile, final output is saved locally in cron history, not delivered live.\n\nSteps:\n1. Read SCHEMA.md, index.md, log.md, and Hermes/How Hermes Uses This Vault.md if available.\n2. Use session_search to browse/search recent sessions. Focus on conversations after the most recent 'daily chat auto-save' log entry if identifiable; otherwise inspect recent sessions conservatively.\n3. Extract only high-signal durable information.\n4. Save to appropriate places:\n   - Hermes setup/config/sync facts -> /opt/data/ObsidianVault/Hermes/Setup Notes.md or LLM Wiki/entities/\n   - reusable workflows -> /opt/data/ObsidianVault/Hermes/ or LLM Wiki/concepts/\n   - TikTok Shop/Google Flow reusable rules -> their existing notes or LLM Wiki/concepts/\n   - reusable query answers -> LLM Wiki/queries/\n   - uncertain items -> Inbox/Review Before Saving.md\n5. Update LLM Wiki/index.md if new important wiki pages are created.\n6. Append a log.md entry with date, sessions reviewed, and files updated.\n7. Final response: summarize what was saved or say 'No durable chat knowledge found'.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": "openai-codex",
+      "model_snapshot": "gpt-5.5",
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 2 * * *",
+        "display": "30 2 * * *"
+      },
+      "schedule_display": "30 2 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-07-27T11:10:29.397579+00:00",
+      "next_run_at": "2026-07-28T02:30:00+00:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": null,
+      "enabled_toolsets": null,
+      "workdir": null
+    },
+    {
+      "id": "4a3e857c8b87",
+      "name": "Obsidian vault nightly local git backup",
+      "prompt": "Nightly local git backup for the user's Obsidian vault.\n\nWorkdir/vault: /opt/data/ObsidianVault\n\nTask:\n1. Run git status.\n2. If there are changes, run git add . and git commit -m \"Automated vault backup YYYY-MM-DD\" with the current date.\n3. If a remote named origin exists, attempt git push origin HEAD, but do not fail the whole job if no remote exists.\n4. Do not print secrets or file contents.\n5. Final response: say whether a commit was created and whether push was skipped or completed.\n\nThis is local-only in Hermes TUI; output is saved in cron history.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": "openai-codex",
+      "model_snapshot": "gpt-5.5",
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 4 * * *",
+        "display": "0 4 * * *"
+      },
+      "schedule_display": "0 4 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-07-27T11:14:27.985368+00:00",
+      "next_run_at": "2026-07-28T04:00:00+00:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": null,
+      "enabled_toolsets": [
+        "terminal"
+      ],
+      "workdir": "/opt/data/ObsidianVault"
+    }
+  ],
+  "updated_at": "2026-07-27T11:14:28.033925+00:00"
+}

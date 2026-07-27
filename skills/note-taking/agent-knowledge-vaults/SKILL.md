@@ -199,6 +199,21 @@ When building this user’s Hermes + Obsidian “second brain”, prefer editabl
 - If the user is unsure about current paths/settings and may redo setup later, save those facts under `Inbox/` with clear “temporary / can be rebuilt later” wording. Do not present them as final decisions.
 - Remind the user that all vault content is normal `.md` text they can edit, move, or delete later in Obsidian.
 
+## Safe automation rollout
+
+When the user asks to automate the LLM Wiki after the starter scaffold is working, match the user's desired automation level instead of assuming review-first forever.
+
+1. **Default safe mode** — daily raw-ingest draft check plus weekly lint report. Draft uncertain ingest notes into `Inbox/Review Before Saving.md`; do not permanently rewrite wiki pages without review.
+2. **Video-parity mode** — if the user explicitly says they want it like the tutorial/video or says they do not want to remember to say “save this,” add a daily chat auto-save job and make the raw ingest job perform real ingest into linked wiki pages when safe. Still redact secrets and send ambiguous/sensitive items to Inbox.
+3. **Weekly lint report** — checks for missing required files, broken/likely-missing links, orphan/unindexed pages, duplicates, stale structure, and raw sources not processed; it should draft proposed fixes unless the user has explicitly approved auto-fixes.
+4. **Git backup progression** — local git backup is safe once the vault exists. GitHub push requires explicit user approval, a private repo, and authentication/token setup; do not request or store tokens in chat.
+
+In Hermes TUI/local sessions, cron jobs are local-only by default: outputs are saved in cron history and are not delivered live back into the TUI. Say this plainly. If the user wants notifications, use a gateway-connected delivery target such as Telegram/all only after they request it.
+
+## Source-video / tutorial handling
+
+If a user provides a tutorial transcript/video only to guide setup, do **not** ingest the full transcript into `raw/` by default. Use it as a checklist for building the scaffold/workflow, and save only durable setup decisions or a short maintenance note. Full transcripts belong in `raw/transcripts/` only when the source itself will be queried later.
+
 ## Safety and privacy
 
 - Do not save API keys, passwords, cookies, private tokens, or payment details in the vault.
@@ -219,3 +234,5 @@ When building this user’s Hermes + Obsidian “second brain”, prefer editabl
 See `references/windows-vps-syncthing.md` for a condensed copy-paste setup and troubleshooting guide for Windows PC ↔ Linux VPS Syncthing setup.
 
 See `references/llm-wiki-starter-scaffold.md` for the concrete beginner-safe LLM Wiki scaffold, what counts as done vs not done from the common tutorial/video pattern, and the staged rollout before GitHub/cron automation.
+
+See `references/llm-wiki-safe-automation.md` for the conservative first cron automation pattern: daily raw-ingest drafts, weekly lint reports, TUI/local delivery warning, and tutorial transcript handling.
