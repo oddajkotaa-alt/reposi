@@ -141,6 +141,30 @@ Then quote the exact full path returned by `find` in `cat`.
 
 See also `references/vps-syncthing-restart-and-ui-status.md` for a session-derived condensed troubleshooting transcript.
 
+## Git backup and end-to-end verification
+
+When adding Git/GitHub backup for this synced vault, keep it secondary to the PC ↔ VPS ↔ Hermes sync system. Explain simply: Obsidian on PC syncs through Syncthing to VPS/Hermes, and GitHub is just an extra backup.
+
+For beginner users with unreliable clipboard handling, never paste `cd`, `git config`, and `git push` as one combined line. Use short one-command-at-a-time steps from the short mount path:
+
+```bash
+cd /mnt/hermes-obsidian-vault
+pwd
+git config credential.helper store
+git push -u origin main
+```
+
+If Git refuses a mounted/shared directory with a message like “To add an exception for this directory, call:”, run the suggested `safe.directory` command once, then retry the push:
+
+```bash
+git config --global --add safe.directory /mnt/hermes-obsidian-vault
+git push -u origin main
+```
+
+For GitHub HTTPS auth, tell the user not to paste tokens into chat. Username is the GitHub username; password is the GitHub token (`ghp_...` or `github_pat_...`), and the terminal may show nothing while pasting it.
+
+To verify the complete sync path after setup, ask the user to create a small note in PC Obsidian, then search/read it from Hermes under `/opt/data/ObsidianVault`. A newly created note may be an empty 0-byte `.md`; file presence alone confirms PC Obsidian → Syncthing → VPS/Hermes sync.
+
 ## Troubleshooting style
 
 When the user is confused, do not repeat a long full setup. Switch to one or two steps at a time. If the user asks in Polish or says Polish is easier, continue in concise Polish.

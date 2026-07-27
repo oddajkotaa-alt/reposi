@@ -199,13 +199,13 @@
     "created_at": "2026-07-06T15:38:47.668292+00:00",
     "created_by": null,
     "last_patched_at": null,
-    "last_used_at": "2026-07-26T21:36:59.575393+00:00",
-    "last_viewed_at": "2026-07-26T21:36:59.569209+00:00",
+    "last_used_at": "2026-07-27T12:00:46.723410+00:00",
+    "last_viewed_at": "2026-07-27T12:00:46.716057+00:00",
     "patch_count": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 5,
-    "view_count": 5
+    "use_count": 6,
+    "view_count": 6
   },
   "claude-code": {
     "archived_at": null,
@@ -277,13 +277,13 @@
     "created_at": "2026-07-06T11:20:10.664901+00:00",
     "created_by": null,
     "last_patched_at": null,
-    "last_used_at": "2026-07-25T16:42:10.019752+00:00",
-    "last_viewed_at": "2026-07-25T16:42:09.989867+00:00",
+    "last_used_at": "2026-07-27T12:39:15.498856+00:00",
+    "last_viewed_at": "2026-07-27T12:39:15.436028+00:00",
     "patch_count": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 8,
-    "view_count": 8
+    "use_count": 9,
+    "view_count": 9
   },
   "containerized-desktop-automation": {
     "archived_at": null,
@@ -446,13 +446,13 @@
     "created_at": "2026-07-25T16:54:23.127225+00:00",
     "created_by": "agent",
     "last_patched_at": "2026-07-25T16:54:36.420469+00:00",
-    "last_used_at": null,
-    "last_viewed_at": null,
+    "last_used_at": "2026-07-27T12:39:15.479045+00:00",
+    "last_viewed_at": "2026-07-27T12:39:15.458507+00:00",
     "patch_count": 1,
     "pinned": false,
     "state": "active",
-    "use_count": 0,
-    "view_count": 0
+    "use_count": 2,
+    "view_count": 2
   },
   "google-workspace": {
     "archived_at": null,
@@ -536,14 +536,14 @@
     "archived_at": null,
     "created_at": "2026-07-26T21:05:14.254626+00:00",
     "created_by": "agent",
-    "last_patched_at": "2026-07-26T21:05:26.346804+00:00",
-    "last_used_at": "2026-07-27T11:33:40.627317+00:00",
-    "last_viewed_at": "2026-07-27T11:33:40.620158+00:00",
-    "patch_count": 1,
+    "last_patched_at": "2026-07-27T11:55:13.427638+00:00",
+    "last_used_at": "2026-07-27T11:55:01.408818+00:00",
+    "last_viewed_at": "2026-07-27T11:55:01.391541+00:00",
+    "patch_count": 2,
     "pinned": false,
     "state": "active",
-    "use_count": 4,
-    "view_count": 4
+    "use_count": 5,
+    "view_count": 5
   },
   "himalaya": {
     "archived_at": null,
@@ -719,13 +719,13 @@
     "created_at": "2026-07-12T18:58:04.182293+00:00",
     "created_by": null,
     "last_patched_at": null,
-    "last_used_at": "2026-07-27T09:51:34.102868+00:00",
-    "last_viewed_at": "2026-07-27T09:51:34.082639+00:00",
+    "last_used_at": "2026-07-27T11:54:10.944790+00:00",
+    "last_viewed_at": "2026-07-27T11:54:10.937545+00:00",
     "patch_count": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 11,
-    "view_count": 11
+    "use_count": 12,
+    "view_count": 12
   },
   "ocr-and-documents": {
     "archived_at": null,
@@ -809,14 +809,14 @@
     "archived_at": null,
     "created_at": "2026-07-26T20:35:02.365194+00:00",
     "created_by": "agent",
-    "last_patched_at": "2026-07-26T23:27:53.952704+00:00",
-    "last_used_at": "2026-07-26T23:27:25.124384+00:00",
-    "last_viewed_at": "2026-07-26T23:27:25.117108+00:00",
-    "patch_count": 10,
+    "last_patched_at": "2026-07-27T11:55:33.143809+00:00",
+    "last_used_at": "2026-07-27T11:55:22.085493+00:00",
+    "last_viewed_at": "2026-07-27T11:55:22.074314+00:00",
+    "patch_count": 11,
     "pinned": false,
     "state": "active",
-    "use_count": 7,
-    "view_count": 7
+    "use_count": 8,
+    "view_count": 8
   },
   "petdex": {
     "archived_at": null,
@@ -1134,27 +1134,27 @@
     "archived_at": null,
     "created_at": "2026-07-07T09:45:52.742428+00:00",
     "created_by": "agent",
-    "last_patched_at": "2026-07-26T00:13:40.156097+00:00",
-    "last_used_at": "2026-07-26T00:47:48.612484+00:00",
-    "last_viewed_at": "2026-07-26T00:47:48.604768+00:00",
-    "patch_count": 30,
+    "last_patched_at": "2026-07-27T12:20:21.697010+00:00",
+    "last_used_at": "2026-07-27T12:20:08.853923+00:00",
+    "last_viewed_at": "2026-07-27T12:20:08.839758+00:00",
+    "patch_count": 34,
     "pinned": false,
     "state": "active",
-    "use_count": 19,
-    "view_count": 19
+    "use_count": 22,
+    "view_count": 22
   },
   "tiktok-shop-slideshow-workflows": {
     "archived_at": null,
     "created_at": "2026-07-25T18:38:00.944623+00:00",
     "created_by": "agent",
     "last_patched_at": "2026-07-25T18:38:16.254051+00:00",
-    "last_used_at": "2026-07-27T09:51:34.112523+00:00",
-    "last_viewed_at": "2026-07-27T09:51:34.090937+00:00",
+    "last_used_at": "2026-07-27T12:36:20.629035+00:00",
+    "last_viewed_at": "2026-07-27T12:36:20.611863+00:00",
     "patch_count": 1,
     "pinned": false,
     "state": "active",
-    "use_count": 1,
-    "view_count": 1
+    "use_count": 3,
+    "view_count": 3
   },
   "tiktok-shop-slideshows": {
     "archived_at": null,

@@ -110,16 +110,23 @@ For any book slideshow:
 - Keep typography consistent across every slide. Default requested typography: Cooper Black Italic style, black fill, thick white outline/stroke, subtle black shadow/second outline, similar sizes and hierarchy. For hook/editorial/feminine luxury references, copy the reference typography closely: Didot/Bodoni/Playfair-style high-contrast serif, oversized bold italic key words, upright serif support text, small light italic subtitle, tight clean spacing, premium fashion-magazine balance, no sans/rounded/handwritten/script fonts.
 - CTA text such as `Shop Here` should only be added/enlarged if the user explicitly asks for it in the prompt.
 
-### Saving replacement book references
+### Saving replacement / approved book references
 
 When the user sends a new replacement set of book photos, especially through Telegram, actively save the actual image files into a stable current-reference folder and verify the count before confirming. Preferred convention:
 
 ```text
 /opt/data/book_references/current/
+  book_01.ext ... book_10.ext
   manifest.json
 ```
 
-The manifest should list each original attachment path, saved path, label/title if known, and hash. Do not confuse deleting old reference notes/mappings with deleting actual image files. If a prior Telegram-side assistant claimed to save images but the stable folder is missing in the current session, re-copy from the Telegram attachment cache before answering. See `references/current-book-reference-handling.md` for the detailed workflow and pitfalls.
+The manifest should list each original attachment path, saved path, label/title if known, and hash. Do not confuse deleting old reference notes/mappings with deleting actual image files. If a prior Telegram-side assistant claimed to save images but the stable folder is missing in the current session, re-copy from the Telegram attachment cache before answering.
+
+If the user explicitly provides an approved 10-book set and says it should be reused, save and verify exactly 10 images, then reuse that approved current set for those exact books in future 5-book or 10-book tasks. For a 10-book generation use all 10; for a 5-book generation select/request 5 from the approved set. Continue to ignore all old or `DO_NOT_USE` folders.
+
+Known old host-side folders that must not be used as references include `DO_NOT_USE_book-2027-chatgpt-10refs`, `DO_NOT_USE_book-2027-chatgpt-refs`, and `DO_NOT_USE_old_wrong_book_refs` under `/home/flowdesk` when present.
+
+See `references/current-book-reference-handling.md` for the detailed workflow and pitfalls. See `references/approved-10-book-reference-set.md` for the approved-set save/verify pattern and user-facing confirmation wording.
 
 ## Verification checklist
 
@@ -136,4 +143,5 @@ Before delivering:
 
 See `references/pet-cooling-mat-session.md` for concrete examples from the cat cooling mat workflows.
 See `references/user-style-and-consistency-notes.md` for the user's `my style` visual system, consistency pitfalls, product-info wording, and book-bundle workflow notes.
+See `references/book-reference-quarantine.md` for the host-side old/wrong book-reference folder quarantine pattern, including `/home/flowdesk` folders that may not be visible from the Hermes container.
 Do not use saved book-reference notes or old book-photo mappings; require current uploads for book covers/photos.
