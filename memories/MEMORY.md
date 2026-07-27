@@ -1,10 +1,10 @@
 User's VPS Google Flow setup uses noVNC/websockify on port 6080 connected to TigerVNC display :1 as user flowdesk; Google Chrome is available at /usr/bin/google-chrome and works for Flow, while Snap Chromium caused VNC launch errors.
 §
-For VPS setup commands, explicitly state whether to run them inside the SSH/VPS Linux shell vs the user's local Windows Terminal; user may otherwise paste Linux-only paths locally.
+For VPS commands, label SSH/VPS Linux vs local Windows Terminal; user may otherwise paste Linux paths locally.
 §
 User has an Obsidian vault at /opt/data/ObsidianVault; for TikTok Shop slideshow/faceless video tasks, especially “recreate this slideshow/image” or reference-to-prompt work, check relevant vault notes first: TikTok Shop/Recreate Slideshow Workflow.md, TikTok Shop/Style Rules.md, and Prompt Examples.
 §
-For TikTok Shop slideshow recreation: after creating prompts from reference images using the Obsidian workflow, the user wants Hermes to use Google Flow/Nano Banana Pro to generate the images when requested, not stop at prompt drafting.
+For TikTok Shop slideshow recreation, user prefers API image generation over old Google Flow/noVNC unless explicitly requested. Upload refs via Telegram and continue in TUI using shared /opt/data Hermes home/cache/session DB when available.
 §
 For book/Telegram Flow slideshows, never use old/DO_NOT_USE refs. Use approved set /opt/data/product_references/books-current-10 for those exact books, selecting 5 or 10 as requested; check Obsidian before prompts when asked.
 §

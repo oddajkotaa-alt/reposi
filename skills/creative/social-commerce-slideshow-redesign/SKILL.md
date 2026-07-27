@@ -61,6 +61,8 @@ If the notes are unavailable, continue from the user-provided references and say
    - Write slide-specific prompts.
    - Prompts must use the user’s exact JSON prompt schema: top-level `prompt` with `scene`, `style`, `technical`, `materials`, `environment`, `composition`, and `quality` sections. Do not substitute a different schema.
    - For photo-style slides, include casual-natural quality language such as “casual iPhone photo,” “natural iPhone photo quality,” or “believable handheld smartphone photo”; skip this for explicitly animated/graphic slides.
+   - When product reference photos are provided, use them as the visual source of truth and avoid over-describing the product/package/cover. Prompt lightly: “Use the attached product photo reference for the exact book cover/design/scale. Do not redesign or invent the cover.”
+   - If the reference slideshow has a strong theme/world (Roman stoicism, dark academia, nursery, kitchen routine, car interior, etc.), preserve that theme in redesigned form. Apply the account palette as an influence, not a replacement that erases the topic.
    - Include text overlay instructions and safe-zone placement.
    - Include negative rules: no fake claims, no warped anatomy, no oversized product, no random background changes.
 
@@ -72,6 +74,22 @@ If the notes are unavailable, continue from the user-provided references and say
 7. **Self-review and regenerate weak slides**
    - Check naturalness, product scale, character/hands, background coherence, text readability, and whether the result feels redesigned rather than copied.
    - Regenerate only weak slides with targeted correction prompts.
+
+## Account-Wide Palette Rules
+
+The user wants one recognizable color system for the whole account, not a different palette for every product. The default account identity should be universal rather than beauty/feminine-specific.
+
+Default direction:
+
+- warm cream, oat beige, soft greige, light mushroom, warm off-white
+- natural environment colors: light oak, cream walls, stone counters, warm white ceramic, linen, muted sage decor
+- primary text: deep espresso brown or soft charcoal
+- emphasis text: muted burnt terracotta / warm clay
+- optional secondary accent: muted sage olive or muted golden beige
+
+Use two-color typography: normal words in deep espresso/soft charcoal, key emotional words in muted terracotta. Violet/berry/plum is optional for beauty/women-focused campaigns but should not be the default account-wide accent.
+
+For full palette details, read `references/account-palette-system.md`.
 
 ## Naturalness Rules
 
@@ -121,8 +139,17 @@ Classify reference slides before prompting:
 - **Natural photo slideshows:** use believable lived-in backgrounds, realistic product scale, natural hands/characters, and casual iPhone/social-photo quality. Simple backgrounds can still work, but they should feel real rather than empty AI studio space.
 - **Animated / graphic slideshows:** simple flat color backgrounds, stylized text/background relationships, and designed compositions are acceptable when that is the intended style. Do not force these into realistic rooms.
 
+## Telegram / Cross-Session Image Intake
+
+When the user sends slideshow images through Telegram while continuing in TUI/CLI, the exact same session ID is not required. What matters is that Telegram and TUI share the same Hermes home/database and that image paths under `/opt/data/cache/images/...` are accessible. Ask for a marker message, find the recent Telegram messages with image attachments, extract local paths, and build a contact sheet for multi-image inspiration batches before detailed analysis.
+
+For the detailed intake pattern and pitfalls, read `references/telegram-image-intake.md`.
+
 ## References
 
 - `references/redesign-workflow.md` — detailed slide analysis, redesign blueprint, continuity, and review templates.
 - `references/json-schema-and-style-rules.md` — exact JSON prompt schema, casual iPhone photo-quality rule, redesign-not-copy rule, environment continuity, and inspiration/palette guidance.
+- `references/account-palette-system.md` — account-wide warm neutral + muted terracotta palette rules and niche adjustments.
+- `references/product-reference-and-themed-redesign.md` — handling separate product reference photos, avoiding over-description, and preserving strong slideshow themes while applying account colors.
+- `references/telegram-image-intake.md` — workflow for finding Telegram-uploaded reference images from a TUI session and analyzing batches.
 - `templates/prompt-pack.json` — starter JSON shape for API-ready slideshow prompt packs.
