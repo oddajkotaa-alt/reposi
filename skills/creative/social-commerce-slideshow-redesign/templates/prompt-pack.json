@@ -1,0 +1,55 @@
+{
+  "project_name": "",
+  "mode": "reference_redesign",
+  "product": {
+    "name": "",
+    "consistent_description": "",
+    "truths_to_preserve": [],
+    "claims_to_avoid": [],
+    "reference_images": []
+  },
+  "source_material": {
+    "reference_slideshow": [],
+    "inspiration_slideshows": [],
+    "old_prompt_skill_or_examples": []
+  },
+  "analysis": {
+    "overall_structure": [],
+    "visual_language": [],
+    "font_and_text_rules": [],
+    "photo_style_rules": [],
+    "product_language": ""
+  },
+  "shared_style": {
+    "aspect_ratio": "3:4",
+    "photo_style": "natural casual social-photo realism",
+    "font_style": "",
+    "palette": "",
+    "camera_style": "",
+    "continuity_groups": {}
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "reference_role": "",
+      "new_role": "",
+      "based_on_reference_slide": "",
+      "core_concept_to_preserve": "",
+      "surface_details_to_change": [],
+      "product_message": "",
+      "redesign_intent": "",
+      "continuity_group": "",
+      "environment_type": "",
+      "redesigned_scene": "",
+      "subject_action": "",
+      "product_appearance": "",
+      "text_overlay": "",
+      "text_placement": "",
+      "text_style": "",
+      "composition_notes": "",
+      "prompt": "",
+      "negative_rules": [],
+      "review_checks": []
+    }
+  ]
+}
