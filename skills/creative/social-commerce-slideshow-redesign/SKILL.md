@@ -20,16 +20,17 @@ Do **not** copy slides 1:1. Extract the concept, sales logic, product language, 
 
 ## Load Source-of-Truth Notes First
 
-When the user asks to recreate/redesign/generate slideshow images, first check the user’s Obsidian/source-of-truth notes if available and relevant. Prioritize notes about:
+When the user asks to recreate/redesign/generate slideshow images, first check the user’s Obsidian/source-of-truth notes if available and relevant. The approved current notes live under `/opt/data/ObsidianVault/TikTok Shop/`:
 
-- recreate slideshow workflow
-- TikTok Shop / social-commerce style rules
-- photo style rules
-- font and text-overlay rules
-- prompt examples
-- product-specific safety rules
+- `Recreate Slideshow Command Checklist.md`
+- `Slideshow Recreation System.md`
+- `Account Palette System.md`
+- `JSON Prompt Schema for Slideshows.md`
+- `Slideshow Typography and Visual Style.md`
+- `Book Slideshow Reference Workflow.md` when product is books
+- `API Image Generation Notes.md` when generating images/API outputs
 
-If the notes are unavailable, continue from the user-provided references and say that the saved notes were not available.
+Prioritize notes about recreate workflow, account palette, photo/graphic style rules, font/text-overlay rules, prompt schema, examples, and product-specific safety/reference rules. If the notes are unavailable, continue from the user-provided references and say that the saved notes were not available.
 
 ## Workflow
 
