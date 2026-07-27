@@ -59,6 +59,8 @@ If the notes are unavailable, continue from the user-provided references and say
    - Define shared style block.
    - Define continuity groups.
    - Write slide-specific prompts.
+   - Prompts must use the user’s exact JSON prompt schema: top-level `prompt` with `scene`, `style`, `technical`, `materials`, `environment`, `composition`, and `quality` sections. Do not substitute a different schema.
+   - For photo-style slides, include casual-natural quality language such as “casual iPhone photo,” “natural iPhone photo quality,” or “believable handheld smartphone photo”; skip this for explicitly animated/graphic slides.
    - Include text overlay instructions and safe-zone placement.
    - Include negative rules: no fake claims, no warped anatomy, no oversized product, no random background changes.
 
@@ -106,10 +108,21 @@ Extract transferable design intelligence:
 - contrast
 - background consistency
 - natural photo feel
+- natural vs animated/graphic style category
+- background simplicity level
+- palette system: background colors, text colors, accent colors, contrast, warm/cool balance, and repeated color relationships
 
-Do not copy niche-specific claims, exact scenes, exact product language, or exact compositions if they do not fit the target product.
+Do not copy niche-specific claims, exact scenes, exact product language, exact palettes, or exact compositions if they do not fit the target product. If the inspiration account has recognizable colors, create an original palette system with different colors but similar consistency.
+
+## Natural vs Graphic Style Split
+
+Classify reference slides before prompting:
+
+- **Natural photo slideshows:** use believable lived-in backgrounds, realistic product scale, natural hands/characters, and casual iPhone/social-photo quality. Simple backgrounds can still work, but they should feel real rather than empty AI studio space.
+- **Animated / graphic slideshows:** simple flat color backgrounds, stylized text/background relationships, and designed compositions are acceptable when that is the intended style. Do not force these into realistic rooms.
 
 ## References
 
 - `references/redesign-workflow.md` — detailed slide analysis, redesign blueprint, continuity, and review templates.
+- `references/json-schema-and-style-rules.md` — exact JSON prompt schema, casual iPhone photo-quality rule, redesign-not-copy rule, environment continuity, and inspiration/palette guidance.
 - `templates/prompt-pack.json` — starter JSON shape for API-ready slideshow prompt packs.
