@@ -188,6 +188,17 @@ SSH password notes:
 - Do not ask the user to paste passwords.
 - If `root@IP` fails, try the provider’s actual username or check whether SSH keys are required.
 
+## Review-first Obsidian setup pattern
+
+When building this user’s Hermes + Obsidian “second brain”, prefer editable markdown scaffolding over treating the current sync/setup as permanent:
+
+- Create or maintain a `Home.md` dashboard with wikilinks to the important notes and folders.
+- Keep agent behavior rules in a note such as `Hermes/How Hermes Uses This Vault.md`: search relevant notes first, save clean summaries/workflows/prompts, and avoid raw chat dumps.
+- For TikTok Shop / Google Flow work, class-level notes like `TikTok Shop/Content System.md`, `Google Flow/Nano Banana Pro Workflow.md`, and `Prompt Examples/Image Prompts.md` are more useful than one-off session notes.
+- Add reusable starter files under `Templates/` for session summaries, prompts, and workflows.
+- If the user is unsure about current paths/settings and may redo setup later, save those facts under `Inbox/` with clear “temporary / can be rebuilt later” wording. Do not present them as final decisions.
+- Remind the user that all vault content is normal `.md` text they can edit, move, or delete later in Obsidian.
+
 ## Safety and privacy
 
 - Do not save API keys, passwords, cookies, private tokens, or payment details in the vault.
@@ -206,3 +217,5 @@ SSH password notes:
 ## Reference
 
 See `references/windows-vps-syncthing.md` for a condensed copy-paste setup and troubleshooting guide for Windows PC ↔ Linux VPS Syncthing setup.
+
+See `references/llm-wiki-starter-scaffold.md` for the concrete beginner-safe LLM Wiki scaffold, what counts as done vs not done from the common tutorial/video pattern, and the staged rollout before GitHub/cron automation.

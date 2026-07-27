@@ -12,6 +12,6 @@ User's VPS currently has ~4 vCPU AMD EPYC, 7.8GB RAM, no NVIDIA GPU/no nvidia-sm
 §
 User wants to build a fresh Obsidian + LLM Wiki “second brain” for Hermes long-term knowledge, connected between PC Obsidian and VPS Hermes via free Syncthing; avoid adding extra memory tools like Honcho unless a clear need appears.
 §
-For this Hermes VPS Docker setup, the active TUI runs in container `hermes-agent`; its `/opt/data` is Docker volume `/var/lib/docker/volumes/b7c39575561de34eacce033f8462d5068ebb13f5a2ce0b53b301e357f1a4687d/_data`, so host `/opt/data/ObsidianVault` is a different folder unless symlinked.
+Hermes VPS Obsidian sync currently works but user treats settings as editable/not final. Active TUI/container can read synced vault at `/opt/data/ObsidianVault`; host/VPS Syncthing path is `/mnt/hermes-obsidian-vault`; Windows vault path is `C:\Users\Admin\Documents\ObsidianVault`.
 §
 User has difficulty copying long VPS paths/commands and may accidentally press Ctrl+C in terminal; prefer short one-line pasteable commands, globs/symlinks, and when recovering after interruption, paste the exact last instructions/context rather than a generic summary.

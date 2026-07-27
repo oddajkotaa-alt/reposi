@@ -1,4 +1,4 @@
-User prefers beginner-friendly short copy-paste steps, asks before big changes/deletes, avoids saving private data/secrets, wants API cost warnings/control, and wants Obsidian/chat notes saved review-first rather than raw automatic dumps.
+User wants Obsidian/LLM Wiki notes saved review-first/manual by default, not raw automatic dumps; only auto-ingest/lint/backup after explicit approval.
 §
 User creates TikTok Shop slideshows/faceless videos; wants prompts, image/video creation, MP4 assembly, reusable systems, natural English ad copy, and safe comment/debate hooks.
 §
