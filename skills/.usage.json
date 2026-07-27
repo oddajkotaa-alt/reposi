@@ -199,13 +199,13 @@
     "created_at": "2026-07-06T15:38:47.668292+00:00",
     "created_by": null,
     "last_patched_at": null,
-    "last_used_at": "2026-07-27T12:00:46.723410+00:00",
-    "last_viewed_at": "2026-07-27T12:00:46.716057+00:00",
+    "last_used_at": "2026-07-27T14:58:37.436622+00:00",
+    "last_viewed_at": "2026-07-27T14:58:37.421746+00:00",
     "patch_count": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 6,
-    "view_count": 6
+    "use_count": 7,
+    "view_count": 7
   },
   "claude-code": {
     "archived_at": null,
@@ -458,14 +458,14 @@
     "archived_at": null,
     "created_at": "2026-07-25T16:54:23.127225+00:00",
     "created_by": "agent",
-    "last_patched_at": "2026-07-27T13:28:00.055775+00:00",
-    "last_used_at": "2026-07-27T13:26:53.542817+00:00",
-    "last_viewed_at": "2026-07-27T13:26:53.529386+00:00",
-    "patch_count": 11,
+    "last_patched_at": "2026-07-27T15:33:45.027206+00:00",
+    "last_used_at": "2026-07-27T15:32:19.864190+00:00",
+    "last_viewed_at": "2026-07-27T15:32:19.854332+00:00",
+    "patch_count": 16,
     "pinned": false,
     "state": "active",
-    "use_count": 6,
-    "view_count": 6
+    "use_count": 7,
+    "view_count": 7
   },
   "google-workspace": {
     "archived_at": null,
@@ -732,13 +732,13 @@
     "created_at": "2026-07-12T18:58:04.182293+00:00",
     "created_by": null,
     "last_patched_at": null,
-    "last_used_at": "2026-07-27T11:54:10.944790+00:00",
-    "last_viewed_at": "2026-07-27T11:54:10.937545+00:00",
+    "last_used_at": "2026-07-27T15:02:37.536213+00:00",
+    "last_viewed_at": "2026-07-27T15:02:37.527070+00:00",
     "patch_count": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 12,
-    "view_count": 12
+    "use_count": 13,
+    "view_count": 13
   },
   "ocr-and-documents": {
     "archived_at": null,
@@ -1221,10 +1221,36 @@
     "use_count": 19,
     "view_count": 19
   },
+  "vps-google-flow-automation": {
+    "archived_at": null,
+    "created_at": "2026-07-27T15:08:04.638841+00:00",
+    "created_by": "agent",
+    "last_patched_at": "2026-07-27T15:08:22.126552+00:00",
+    "last_used_at": null,
+    "last_viewed_at": null,
+    "patch_count": 1,
+    "pinned": false,
+    "state": "active",
+    "use_count": 0,
+    "view_count": 0
+  },
   "weights-and-biases": {
     "archived_at": null,
     "created_at": "2026-07-12T18:58:04.454350+00:00",
     "created_by": null,
+    "last_patched_at": null,
+    "last_used_at": null,
+    "last_viewed_at": null,
+    "patch_count": 0,
+    "pinned": false,
+    "state": "active",
+    "use_count": 0,
+    "view_count": 0
+  },
+  "workflow-source-of-truth-maintenance": {
+    "archived_at": null,
+    "created_at": "2026-07-27T15:08:37.044322+00:00",
+    "created_by": "agent",
     "last_patched_at": null,
     "last_used_at": null,
     "last_viewed_at": null,

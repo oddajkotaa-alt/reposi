@@ -73,18 +73,21 @@ Treat these as starting assumptions, not immutable facts. Verify live state befo
 
 1. Prepare a clean product/job workspace before opening Flow when references are involved. Prefer the product library + current Flow job pattern in `references/product-library-and-flow-jobs.md` so Flow only sees the current job's `references/`, `prompts/`, and `outputs/` folders.
 2. Open the Flow/noVNC environment and verify Chrome is usable. If display access or automation is stuck around `DISPLAY=:1`/Xauthority, use `references/flow-vnc-xauthority-recovery.md`.
-3. Navigate to Google Flow and confirm the user is logged in.
-4. Select Agent generation / Nano Banana Pro when available.
-5. Set aspect ratio to `3:4` unless the prompt says otherwise.
-6. Upload reference images only from the current job/reference set, not old product folders.
-7. Paste the final prompt; do not silently add claims or CTA text.
-7. Before starting generation, verify that the visible UI is the user's intended Google Flow profile/session. If using noVNC and it asks for a VNC password, stop and ask the user to connect it themselves; never request or type the password.
-8. Start generation.
-9. Wait and monitor progress with periodic captures; avoid blind repeated clicking.
-10. When results appear, inspect them for prompt compliance.
-11. Download/export outputs and return file paths or media to the user.
+3. If the request comes via Telegram and Telegram Hermes cannot see the Flow desktop while host noVNC works, use `references/telegram-host-gateway-flow-desktop.md` before continuing generation.
+4. Navigate to Google Flow and confirm the user is logged in.
+5. Select Agent generation / Nano Banana Pro when available.
+6. Set aspect ratio to `3:4` unless the prompt says otherwise.
+7. **Run PRE-FLIGHT before generation.** For image/reference jobs, especially book slideshows, read `/opt/data/ObsidianVault/TikTok Shop/Image Generation Command Center.md` when available and follow `references/image-generation-command-center-preflight.md`. List actual reference files, counts, duplicates, expected output count, and `Ready to generate: yes/no` before uploading/generating.
+8. Upload reference images only from the current job/reference set, not old product folders. If the reference count is wrong, duplicated, or unclear, stop and wait for corrected files; do not fill gaps from memory or old folders.
+9. Paste the final prompt. Preserve the quality instructions: exact reference mapping, realistic scene/lighting/camera feel, typography/text placement, hard negatives, and QC targets. Do not silently add claims or CTA text.
+10. Before starting generation, verify that the visible UI is the user's intended Google Flow profile/session. If using noVNC and it asks for a VNC password, stop and ask the user to connect it themselves; never request or type the password.
+11. Start generation.
+12. Wait and monitor progress with periodic captures; avoid blind repeated clicking.
+13. When results appear, inspect them for prompt compliance.
+14. Run QC before saying done: count, dimensions/aspect ratio, exact product/book identity, text spelling/placement, background variation, no invented claims, and rejects separated from finals.
+15. Download/export outputs and return file paths or media to the user.
 
-Completion requires either returned output files or a specific blocker with evidence.
+Completion requires either returned output files that passed QC or a specific blocker with evidence.
 
 ## User Creative Defaults
 
@@ -126,6 +129,9 @@ When the user says “my style” for realistic/photo outputs, make the image fe
 6. **Changing paid settings.** Stop and ask before credits, purchases, upgrades, or payment UI.
 7. **Letting many old product folders accumulate in Flow's file picker.** For multi-product workflows, use a product library plus per-job `current` folder; copy only the active references into the current job before upload.
 8. **Treating `DISPLAY=:1`/Xauthority failures as Flow failures.** If noVNC/Chrome exists but computer-use/Telegram automation cannot access it, run the Xauthority/VNC recovery in `references/flow-vnc-xauthority-recovery.md` instead of restarting the whole creative workflow.
+9. **Skipping reference validation because prompts are detailed.** High-quality prompt instructions do not replace file/count validation. Always do PRE-FLIGHT first; detailed prompts are used after references are proven correct.
+10. **Centralizing instructions by deleting quality rules.** The user's goal is fewer contradictory instruction sources, not weaker prompts. Preserve scene, lighting, camera feel, typography, reference-mapping, hard-negative, and QC detail in the central workflow.
+11. **Telegram routed through a container that cannot see host Flow.** If Telegram says computer-use has no screen while host noVNC works, apply `references/telegram-host-gateway-flow-desktop.md` so the gateway handling Telegram runs with host `DISPLAY=:1` access.
 
 ## Verification Checklist
 
@@ -144,3 +150,5 @@ When the user says “my style” for realistic/photo outputs, make the image fe
 - See `references/session-preferences.md` for the session-specific preferences that motivated this skill.
 - See `references/product-library-and-flow-jobs.md` for the scalable product-reference library and per-job workspace pattern.
 - See `references/flow-vnc-xauthority-recovery.md` for recovering noVNC/TigerVNC `DISPLAY=:1` Xauthority/cua-driver failures.
+- See `references/image-generation-command-center-preflight.md` for the central Obsidian Command Center + mandatory PRE-FLIGHT pattern that preserves prompt quality while preventing stale/duplicate reference mistakes.
+- See `references/telegram-host-gateway-flow-desktop.md` for rerouting Telegram Hermes to the host Flow desktop when a container gateway cannot see noVNC/Chrome.
