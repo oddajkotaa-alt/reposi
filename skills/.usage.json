@@ -277,13 +277,13 @@
     "created_at": "2026-07-06T11:20:10.664901+00:00",
     "created_by": null,
     "last_patched_at": null,
-    "last_used_at": "2026-07-27T13:38:36.496715+00:00",
-    "last_viewed_at": "2026-07-27T13:38:36.478321+00:00",
+    "last_used_at": "2026-07-27T13:53:59.659377+00:00",
+    "last_viewed_at": "2026-07-27T13:53:59.652033+00:00",
     "patch_count": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 11,
-    "view_count": 11
+    "use_count": 12,
+    "view_count": 12
   },
   "containerized-desktop-automation": {
     "archived_at": null,
@@ -310,6 +310,19 @@
     "state": "active",
     "use_count": 0,
     "view_count": 0
+  },
+  "devops/vps-browser-desktop-novnc": {
+    "archived_at": null,
+    "created_at": "2026-07-27T14:29:58.735797+00:00",
+    "created_by": null,
+    "last_patched_at": null,
+    "last_used_at": "2026-07-27T14:29:58.748445+00:00",
+    "last_viewed_at": "2026-07-27T14:29:58.735827+00:00",
+    "patch_count": 0,
+    "pinned": false,
+    "state": "active",
+    "use_count": 1,
+    "view_count": 1
   },
   "dogfood": {
     "archived_at": null,
@@ -485,13 +498,13 @@
     "created_at": "2026-07-06T11:24:14.743712+00:00",
     "created_by": null,
     "last_patched_at": null,
-    "last_used_at": "2026-07-25T16:55:22.018690+00:00",
-    "last_viewed_at": "2026-07-25T16:55:22.011072+00:00",
+    "last_used_at": "2026-07-27T14:21:15.517645+00:00",
+    "last_viewed_at": "2026-07-27T14:21:15.510349+00:00",
     "patch_count": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 8,
-    "view_count": 8
+    "use_count": 9,
+    "view_count": 9
   },
   "hermes-agent-skill-authoring": {
     "archived_at": null,
@@ -1199,14 +1212,14 @@
     "archived_at": null,
     "created_at": "2026-07-20T21:24:45.477961+00:00",
     "created_by": "agent",
-    "last_patched_at": "2026-07-27T13:20:38.047330+00:00",
-    "last_used_at": "2026-07-27T13:19:49.825981+00:00",
-    "last_viewed_at": "2026-07-27T13:19:49.807032+00:00",
-    "patch_count": 22,
+    "last_patched_at": "2026-07-27T14:30:41.514726+00:00",
+    "last_used_at": "2026-07-27T14:29:50.092081+00:00",
+    "last_viewed_at": "2026-07-27T14:29:50.083417+00:00",
+    "patch_count": 29,
     "pinned": false,
     "state": "active",
-    "use_count": 16,
-    "view_count": 16
+    "use_count": 19,
+    "view_count": 19
   },
   "weights-and-biases": {
     "archived_at": null,

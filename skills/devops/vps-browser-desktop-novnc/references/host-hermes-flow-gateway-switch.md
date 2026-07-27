@@ -111,11 +111,43 @@ EOF
 chmod +x /root/start-host-hermes-gateway.sh
 ```
 
-Then switch:
+Then switch. Prefer stopping only the container gateway service, not the whole container/TUI, when the user is actively chatting in the containerized Hermes:
 
 ```bash
-docker stop hermes-agent
+# On s6-based Hermes containers, s6-svc is under /command
+# This disables the gateway-default service but keeps the container running.
+docker exec hermes-agent sh -lc '/command/s6-svc -d /run/service/gateway-default || true; pkill -f "hermes gateway run" || true'
+
+# Stop any host gateway that was started with the wrong environment.
+systemctl --user stop hermes-gateway 2>/dev/null || true
+pkill -f 'hermes_cli.main gateway run' 2>/dev/null || true
+pkill -f 'hermes gateway run' 2>/dev/null || true
+
 /root/start-host-hermes-gateway.sh
+```
+
+If the host gateway log says `No messaging platforms enabled`, it almost always means the launcher did not set `HERMES_HOME` to the copied container data. Re-run with `export HERMES_HOME=/root/hermes-host-data` and confirm `/root/hermes-host-data/.env` contains the platform credentials.
+
+If a host Hermes one-shot still reports `computer_use backend unavailable` and looks for the socket under `/root/hermes-host-data/home/.cache/cua-driver/cua-driver.sock`, bridge the host data home to the real `flowdesk` daemon socket:
+
+```bash
+mkdir -p /root/hermes-host-data/home/.cache
+rm -rf /root/hermes-host-data/home/.cache/cua-driver
+ln -s /home/flowdesk/.cache/cua-driver /root/hermes-host-data/home/.cache/cua-driver
+ls -l /root/hermes-host-data/home/.cache/cua-driver/cua-driver.sock
+```
+
+Then verify with a one-shot host Hermes run before telling the user Telegram is fixed:
+
+```bash
+HERMES_HOME=/root/hermes-host-data DISPLAY=:1 XAUTHORITY=/home/flowdesk/.Xauthority \
+  /root/.local/share/uv/tools/hermes-agent/bin/hermes chat -q 'Use computer_use capture. If it works, say what window title you see.' --toolsets computer_use
+```
+
+Test Telegram delivery without relying on the gateway polling loop:
+
+```bash
+HERMES_HOME=/root/hermes-host-data /root/.local/share/uv/tools/hermes-agent/bin/hermes send --to telegram 'Host Hermes gateway is ready; message the bot again.' --json
 ```
 
 Test by messaging the same Telegram bot. If no reply, inspect:

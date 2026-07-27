@@ -14,4 +14,4 @@ User wants an Obsidian + LLM Wiki second brain synced PC↔VPS via Syncthing; pr
 §
 Hermes can read synced Obsidian at `/opt/data/ObsidianVault`; host/VPS Syncthing path `/mnt/hermes-obsidian-vault`; Windows path `C:\Users\Admin\Documents\ObsidianVault`. User treats setup as editable.
 §
-User has difficulty copying long VPS paths/commands and may accidentally press Ctrl+C in terminal; prefer short one-line pasteable commands, globs/symlinks, and when recovering after interruption, paste the exact last instructions/context rather than a generic summary.
+User has difficulty copying VPS/noVNC commands: may press Ctrl+C accidentally, noVNC clipboard corrupts/truncates text and can insert/remove spaces. Prefer doing VPS work directly via SSH when available; otherwise use very short manually typed commands or tiny bootstrap scripts, and restore exact last instructions after interruptions.
