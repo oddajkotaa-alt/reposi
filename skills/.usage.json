@@ -745,13 +745,13 @@
     "created_at": "2026-07-12T18:58:04.182293+00:00",
     "created_by": null,
     "last_patched_at": null,
-    "last_used_at": "2026-07-28T02:30:56.964354+00:00",
-    "last_viewed_at": "2026-07-28T02:30:56.939969+00:00",
+    "last_used_at": "2026-07-28T20:18:09.054322+00:00",
+    "last_viewed_at": "2026-07-28T20:18:09.043608+00:00",
     "patch_count": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 15,
-    "view_count": 15
+    "use_count": 16,
+    "view_count": 16
   },
   "ocr-and-documents": {
     "archived_at": null,
