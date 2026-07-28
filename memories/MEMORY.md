@@ -4,7 +4,7 @@ For VPS commands, label SSH/VPS Linux vs local Windows Terminal; user may otherw
 §
 User has an Obsidian vault at /opt/data/ObsidianVault; for TikTok Shop slideshow/faceless video tasks, especially “recreate this slideshow/image” or reference-to-prompt work, check relevant vault notes first: TikTok Shop/Recreate Slideshow Workflow.md, TikTok Shop/Style Rules.md, and Prompt Examples.
 §
-For TikTok Shop slideshow recreation, user prefers API image generation over old Google Flow/noVNC unless explicitly requested. Upload refs via Telegram and continue in TUI using shared /opt/data Hermes home/cache/session DB when available.
+For TikTok Shop image/slideshow generation, user may choose API for convenience, but wants Google Flow/noVNC when API cost matters; test Flow automation with reset/simplified UI before saving workflows.
 §
 For book/Telegram Flow slideshows, never use old/DO_NOT_USE refs. Use approved set /opt/data/product_references/books-current-10 for those exact books, selecting 5 or 10 as requested; check Obsidian before prompts when asked.
 §

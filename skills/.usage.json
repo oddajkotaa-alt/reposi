@@ -199,13 +199,13 @@
     "created_at": "2026-07-06T15:38:47.668292+00:00",
     "created_by": null,
     "last_patched_at": null,
-    "last_used_at": "2026-07-27T23:14:54.223919+00:00",
-    "last_viewed_at": "2026-07-27T23:14:54.199001+00:00",
+    "last_used_at": "2026-07-28T21:10:24.881689+00:00",
+    "last_viewed_at": "2026-07-28T21:10:24.871912+00:00",
     "patch_count": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 9,
-    "view_count": 9
+    "use_count": 10,
+    "view_count": 10
   },
   "claude-code": {
     "archived_at": null,
@@ -277,13 +277,13 @@
     "created_at": "2026-07-06T11:20:10.664901+00:00",
     "created_by": null,
     "last_patched_at": null,
-    "last_used_at": "2026-07-27T13:53:59.659377+00:00",
-    "last_viewed_at": "2026-07-27T13:53:59.652033+00:00",
+    "last_used_at": "2026-07-28T20:35:25.386771+00:00",
+    "last_viewed_at": "2026-07-28T20:35:25.377010+00:00",
     "patch_count": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 12,
-    "view_count": 12
+    "use_count": 14,
+    "view_count": 14
   },
   "containerized-desktop-automation": {
     "archived_at": null,
@@ -1174,13 +1174,13 @@
     "created_at": "2026-07-25T16:32:32.275394+00:00",
     "created_by": "agent",
     "last_patched_at": "2026-07-25T16:32:47.682114+00:00",
-    "last_used_at": null,
-    "last_viewed_at": null,
+    "last_used_at": "2026-07-28T21:04:51.528123+00:00",
+    "last_viewed_at": "2026-07-28T21:04:51.519083+00:00",
     "patch_count": 1,
     "pinned": false,
     "state": "active",
-    "use_count": 0,
-    "view_count": 0
+    "use_count": 1,
+    "view_count": 1
   },
   "touchdesigner-mcp": {
     "archived_at": null,
@@ -1212,14 +1212,14 @@
     "archived_at": null,
     "created_at": "2026-07-20T21:24:45.477961+00:00",
     "created_by": "agent",
-    "last_patched_at": "2026-07-27T23:11:05.272748+00:00",
-    "last_used_at": "2026-07-27T23:10:50.578457+00:00",
-    "last_viewed_at": "2026-07-27T23:10:50.564484+00:00",
-    "patch_count": 30,
+    "last_patched_at": "2026-07-28T21:06:56.079775+00:00",
+    "last_used_at": "2026-07-28T21:06:46.680937+00:00",
+    "last_viewed_at": "2026-07-28T21:06:46.671753+00:00",
+    "patch_count": 34,
     "pinned": false,
     "state": "active",
-    "use_count": 23,
-    "view_count": 23
+    "use_count": 28,
+    "view_count": 28
   },
   "weights-and-biases": {
     "archived_at": null,

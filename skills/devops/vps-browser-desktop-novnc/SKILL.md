@@ -100,6 +100,8 @@ apt-get update
 - `references/flowdesk-cua-driver-host-display.md` records the specific fix pattern for running `cua-driver` as `flowdesk` against VNC display `:1`, including the `/root/.local/bin` permission pitfall and non-ellipsized command requirement.
 - `references/novnc-cua-driver-rescue.md` records the rescue workflow for repeated Ctrl+C/copy-paste failures: inspect noVNC directly, ask the user only to enter VNC credentials, then continue operating the desktop yourself; includes XAUTHORITY, PATH, and log-permission command patterns.
 - `references/novnc-clipboard-ssh-handoff.md` records the escalation pattern for corrupted noVNC clipboard/spacing: stop sending long commands, install an ephemeral SSH key via a tiny hosted script, take over via SSH, and verify `cua-driver` directly as `flowdesk`.
+- `references/container-vs-host-flow-hermes-same-home.md` records the Google Flow architecture pattern: if Docker/container Hermes has the right skills/Obsidian but cannot see the host VNC desktop, run host-side Hermes with the same `HERMES_HOME=/opt/data` instead of resurrecting a separate `/root/hermes-host-data` brain.
+- `scripts/host-flow-hermes-switch.sh` is a host-side rescue/switch script for the common case where the user wants the old Flow-capable host Hermes “reset” to use the current `/opt/data` brain. It checks it is on the VPS host, backs up/symlinks old `/root/hermes-host-data`, disables only the container gateway service, starts `cua-driver` against `DISPLAY=:1`, starts host Hermes gateway with `/opt/data`, and runs `computer-use doctor`.
 
 ## VNC startup crash troubleshooting
 
