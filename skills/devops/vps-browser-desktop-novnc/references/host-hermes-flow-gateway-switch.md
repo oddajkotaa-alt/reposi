@@ -81,6 +81,28 @@ docker ps --format 'table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Ports}}'
 ps -ef | grep -E 'hermes gateway|gateway run|hermes-agent' | grep -v grep
 ```
 
+Before changing anything, verify which Hermes home is actually active and which cache the dashboard can see. A frequent repair outcome is that `/opt/data` already owns the live gateway, while an older `/root/hermes-host-data` home is stale or inaccessible.
+
+```bash
+printf 'current shell: '; whoami; pwd; printf 'HOME=%s HERMES_HOME=%s\n' "$HOME" "$HERMES_HOME"
+HERMES_HOME=/opt/data HOME=/opt/data/home /opt/hermes/bin/hermes gateway status --deep || true
+HERMES_HOME=/root/hermes-host-data HOME=/root/hermes-host-data/home hermes gateway status --deep || true
+for d in /opt/data /root/hermes-host-data; do
+  echo "-- $d"
+  [ -f "$d/.env" ] && grep -E 'TELEGRAM|BOT|GATEWAY|HERMES_HOME' "$d/.env" | sed -E 's/(TOKEN|KEY|SECRET|PASSWORD)=.*/\1=***REDACTED***/' || echo 'no .env'
+  [ -d "$d/cache/images" ] && find "$d/cache/images" -maxdepth 1 -type f | wc -l || echo 'no image cache'
+done
+```
+
+If `/opt/data` is the desired dashboard/TUI home and it already has Telegram config plus a running gateway, test from that home before migrating anything:
+
+```bash
+HERMES_HOME=/opt/data HOME=/opt/data/home /opt/hermes/bin/hermes send --to telegram \
+  'Test from dashboard Hermes (/opt/data). Reply with one image to verify the dashboard can see uploads.' --json
+```
+
+Then have the user upload one fresh test image and verify it appears under `/opt/data/cache/images/`. Only declare the split repaired after that fresh image lands in the dashboard-visible cache.
+
 A Docker gateway may appear as UID `10000` running `/opt/hermes/.venv/bin/hermes gateway run --replace`.
 
 Create a host gateway launcher:

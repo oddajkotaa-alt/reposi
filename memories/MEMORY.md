@@ -14,4 +14,4 @@ User wants an Obsidian + LLM Wiki second brain synced PC↔VPS via Syncthing; pr
 §
 Hermes can read synced Obsidian at `/opt/data/ObsidianVault`; host/VPS Syncthing path `/mnt/hermes-obsidian-vault`; Windows path `C:\Users\Admin\Documents\ObsidianVault`. User treats setup as editable.
 §
-User has difficulty with VPS/noVNC/TUI recovery commands: may press Ctrl+C accidentally, noVNC clipboard corrupts/truncates text, and resume paths can be confusing. When possible do recovery/repair directly, create simple bootstrap scripts or handoff files, and paste exact last instructions instead of repeatedly giving generic resume commands.
+User’s active Hermes/Telegram setup should use Docker container `hermes-agent` with `HERMES_HOME=/opt/data`; Telegram images should land in `/opt/data/cache/images`. Avoid/disable old root host gateway `/root/.local/share/uv/tools/hermes-agent/bin/hermes gateway run` and old `/root/hermes-host-data`, which caused duplicate bot/image-cache mismatch. User struggles with VPS/noVNC recovery; prefer direct checks and concise pasteable commands.
