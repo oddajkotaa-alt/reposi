@@ -22,16 +22,16 @@
       "schedule_display": "0 2 * * *",
       "repeat": {
         "times": null,
-        "completed": 0
+        "completed": 1
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-07-27T11:05:46.452882+00:00",
-      "next_run_at": "2026-07-28T02:00:00+00:00",
-      "last_run_at": null,
-      "last_status": null,
+      "next_run_at": "2026-07-29T02:00:00+00:00",
+      "last_run_at": "2026-07-28T02:01:01.036846+00:00",
+      "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
       "deliver": "local",
@@ -39,7 +39,8 @@
       "enabled_toolsets": [
         "file"
       ],
-      "workdir": null
+      "workdir": null,
+      "fire_claim": null
     },
     {
       "id": "a0b6f721454d",
@@ -163,5 +164,5 @@
       "workdir": "/opt/data/ObsidianVault"
     }
   ],
-  "updated_at": "2026-07-27T14:19:04.892799+00:00"
+  "updated_at": "2026-07-28T02:01:01.037888+00:00"
 }
