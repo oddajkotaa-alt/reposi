@@ -376,6 +376,19 @@
     "use_count": 0,
     "view_count": 0
   },
+  "fragrance-community-research": {
+    "archived_at": null,
+    "created_at": "2026-07-28T14:16:38.508115+00:00",
+    "created_by": "agent",
+    "last_patched_at": "2026-07-28T14:16:57.238614+00:00",
+    "last_used_at": null,
+    "last_viewed_at": null,
+    "patch_count": 1,
+    "pinned": false,
+    "state": "active",
+    "use_count": 0,
+    "view_count": 0
+  },
   "gif-search": {
     "archived_at": null,
     "created_at": "2026-07-12T18:58:03.892555+00:00",
